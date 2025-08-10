@@ -1,0 +1,192 @@
+---
+title: 'Werkzeuge'
+description: 'Entdecken und lernen Sie, wie Sie die leistungsstarken Werkzeuge für Ihren Chatbot verwenden.'
+icon: 'gear'
+---
+
+## Lead-Generierung
+
+Konfigurieren Sie Ihren Chatbot, um während der Gespräche wertvolle Lead-Informationen zu sammeln.
+
+### Anpassbare Felder
+
+- Name und Kontaktinformationen
+- E-Mail
+- Telefonnummer
+- Betreff der Anfrage
+
+<Frame>
+  <img src="/images/leads-config.png" alt="Lead-Felder" />
+</Frame>
+
+## Terminplanung
+
+Ermöglichen Sie Benutzern, Termine direkt über Ihren Chatbot zu vereinbaren.
+
+### Hauptmerkmale
+
+- Verfügbarkeit planen
+- Bestätigungs-E-Mails
+- Bestätigungsnachrichten
+- Zeitzonen-Verwaltung
+
+<Frame>
+  <img src="/images/appointment-tool.png" alt="Termin-Werkzeug" />
+</Frame>
+
+## Support-Tickets
+
+Optimieren Sie den Kundensupport durch die automatische Erstellung und Verwaltung von Support-Tickets.
+
+### Hauptmerkmale
+
+- Automatische Ticketerstellung
+- Prioritätszuweisung
+- Kategorienklassifizierung
+- Statusverfolgung
+- Teamzuweisung
+- Lösungsverfolgung
+
+<Frame>
+  <img src="/images/support-ticket.png" alt="Support-Ticket" />
+</Frame>
+
+## Live-Chat
+
+Übernehmen Sie bei Bedarf die Kontrolle über Gespräche mit der Live-Chat-Funktion.
+
+### Hauptmerkmale
+
+- Nahtlose Übergabe von KI an Mensch
+- Echtzeit-Gesprächsüberwachung
+- Zugriff auf den Chatverlauf
+- Anzeige von Benutzerinformationen
+
+<Frame>
+  <img src="/images/live-chat.png" alt="Live-Chat" />
+</Frame>
+
+## Bestellungen bearbeiten
+
+Lassen Sie Ihren Chatbot Bestellungen für Sie aufnehmen, Menge, Kundendaten, Zahlungsart usw.
+
+### Hauptmerkmale
+
+- Verwaltung der Bestellmenge
+- Erfassung von Kundendaten
+- Auswahl der Zahlungsart
+- Bestellbestätigungsbenachrichtigungen
+
+<Frame>
+  <img src="/images/procesar-pedidos.png" alt="Live-Chat" />
+</Frame>
+
+## Benutzerdefiniertes Formular
+
+Mit diesem Werkzeug können Sie die Informationen anpassen, die Sie von Ihrem Kunden erhalten möchten.
+<Frame>
+  <img src="/images/formulario.png" alt="Live-Chat" />
+</Frame>
+
+### Konfigurieren Sie Ihren Fragebogen
+
+<Steps>
+  <Step title="Titel des Fragebogens festlegen">
+   Geben Sie die relevanten Informationen für den Fragebogen an, damit der Chatbot weiß, wann er aktiviert werden soll.
+   <Frame>
+  <img src="/images/configuracion-form.png" alt="Live-Chat" />
+</Frame>
+  </Step>
+  <Step title="Felder des Fragebogens festlegen">
+    Dies sind die Datenpunkte, die der Chatbot vom Benutzer sammeln soll.
+     <Frame>
+  <img src="/images/campos-form.png" alt="Live-Chat" />
+</Frame>
+<Warning>Damit dieses Werkzeug funktioniert, müssen Sie Felder hinzufügen</Warning>
+  </Step>  
+</Steps>
+
+
+## Benutzerdefiniertes Werkzeug (API) 
+
+Mit diesem Werkzeug können Sie Ihren Bot so einrichten, dass er jeden beliebigen API-Endpunkt verwenden kann. 
+<Frame>
+  <img src="/images/custom-tool.png" alt="benutzerdefiniertes-werkzeug" />
+</Frame>
+
+
+### Richten Sie Ihr Werkzeug ein
+<Steps>
+  <Step title="Neues Werkzeug erstellen">
+   Klicken Sie auf die Schaltfläche "Werkzeug erstellen", um mit der Konfiguration Ihres benutzerdefinierten Werkzeugs zu beginnen.
+   <Frame>
+  <img src="/images/create-tool.png" alt="werkzeug-erstellen" />
+</Frame>
+  </Step>
+  <Step title="Grundlegende Informationen konfigurieren">
+    Füllen Sie die Hauptfelder Ihres Werkzeugs aus:
+    - **Name**: Geben Sie Ihrem Werkzeug einen aussagekräftigen Namen
+    - **Methode**: Wählen Sie die HTTP-Methode (GET, POST, PUT, DELETE)
+    - **Beschreibung**: Erklären Sie, was dieses Werkzeug tut, damit der Chatbot weiß, wann er es verwenden soll
+    - **URL**: Geben Sie die URL Ihres API-Endpunkts ein
+  </Step>
+  <Step title="Body konfigurieren (für POST, PUT, DELETE)">
+    Wenn Sie POST, PUT oder DELETE ausgewählt haben, können Sie die Felder des Anfrage-Bodys konfigurieren:
+    
+    Für jedes Body-Feld können Sie konfigurieren:
+    - **Name**: Der Name des Feldes (z. B. userData, user_data, items)
+    - **Typ**: Der Datentyp (String, Number, Boolean, etc.)
+    - **Ist ein Array**: Aktivieren Sie diese Option, wenn das Feld ein Array sein soll
+    - **Beschreibung**: Erklären Sie, welche Informationen dieses Feld enthält
+    
+    Konfigurationsbeispiele:
+    - Einfaches Feld: `name` (String) - Zum Senden eines Benutzernamens
+    - Array-Feld: `products` (String, Ist ein Array ✓) - Zum Senden einer Liste von Produkten
+    - Numerisches Feld: `quantity` (Number) - Zum Senden von Mengen
+    - Boolesches Feld: `active` (Boolean) - Um anzuzeigen, ob ein Benutzer aktiv ist
+    - Objekt-Feld: `address` (Object) - Zum Senden der vollständigen Adresse eines Benutzers
+    
+    <Note>Der Body ist nur für die Methoden POST, PUT und DELETE erforderlich. GET verwendet keinen Body.</Note>
+  </Step>
+  <Step title="Parameter hinzufügen (Optional)">
+    Wenn Ihre API Abfrageparameter erfordert, klicken Sie auf "Parameter hinzufügen" und konfigurieren Sie:
+    - Parametername
+    - Datentyp
+    - Ob er erforderlich oder optional ist
+    <Note>Parameter werden als Abfragezeichenfolgen in der URL gesendet</Note>
+  </Step>
+  <Step title="Header konfigurieren (Optional)">
+    Für APIs, die eine Authentifizierung oder spezifische Header erfordern, klicken Sie auf "Header hinzufügen":
+    - Header-Name (z. B. Authorization, Content-Type)
+    - Header-Wert (z. B. Bearer-Token, application/json)
+    <Warning>Bewahren Sie Ihre Token und API-Schlüssel sicher auf. Teilen Sie diese Informationen nicht.</Warning>
+  </Step>
+  <Step title="Werkzeug speichern">
+    Sobald die Konfiguration abgeschlossen ist, klicken Sie auf "Werkzeug erstellen", um Ihr benutzerdefiniertes Werkzeug zu speichern und zu aktivieren.
+  </Step>
+</Steps>
+
+### Anwendungsbeispiele
+
+<Accordion title="Wetter-API">
+  **Name**: Wetterabfrage  
+  **Methode**: GET  
+  **URL**: `https://api.openweathermap.org/data/2.5/weather`  
+  **Parameter**: 
+  - `q` (Stadt)
+  - `appid` (Ihr API-Schlüssel)
+  - `units` (metrisch)
+</Accordion>
+
+<Accordion title="Inventar-API">
+  **Name**: Bestandsabfrage  
+  **Methode**: GET  
+  **URL**: `https://ihre-api.com/inventory/check`  
+  **Header**:
+  - `Authorization`: `Bearer ihr-token`
+  - `Content-Type`: `application/json`
+</Accordion>
+
+<Tip>
+Ihr Chatbot wird automatisch wissen, wann er dieses Werkzeug verwenden muss, basierend auf der von Ihnen bereitgestellten Beschreibung. Seien Sie spezifisch, wann und wie es verwendet werden soll.
+</Tip>

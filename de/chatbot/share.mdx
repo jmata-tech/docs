@@ -1,0 +1,64 @@
+---
+title: 'Teilen'
+description: 'Stellen Sie Ihren Chatbot auf verschiedenen Plattformen in der Produktion bereit'
+icon: 'share-nodes'
+---
+
+## Website-Integration
+
+### Fügen Sie Ihren Chatbot zu Ihrer Website hinzu
+Fügen Sie Ihren Chatbot direkt zu Ihrer Website hinzu, indem Sie das folgende Code-Snippet kopieren und in Ihr HTML einfügen. Der Chatbot wird als schwebende Schaltfläche in der unteren rechten Ecke Ihrer Website angezeigt.
+
+```
+<script>
+    function loadChatScript() {
+        var chatID = '7ee6c0e0-c5bb-4b3d-ac82-557ef09b9340';
+        var script = document.createElement('script');
+        script.src = "https://doko-ai.com/api/chatbot/embed?chatbotId=" + chatID;
+        document.body.appendChild(script);
+    }
+    loadChatScript();
+</script>
+```
+
+## Web-Oberfläche
+Teilen Sie einen direkten Link zur Web-Oberfläche Ihres Chatbots. Benutzer können über ihren Webbrowser auf das vollständige Chat-Erlebnis zugreifen, ohne dass eine Installation erforderlich ist.
+Dieser Link wird automatisch generiert, wenn Sie einen Chatbot auf der Plattform erstellen.
+```
+https://doko-ai.com/chat/chatID
+```
+
+## Holen Sie sich Ihre Chatbot-ID
+<Steps>
+    <Step title="Greifen Sie auf die Freigabeseite zu">
+       <Frame>
+  <img src="/images/interfaz-2.png" alt="Chatbot-ID" />
+</Frame>
+    </Step>
+    <Step title="Kopieren Sie Ihre Chatbot-ID aus der oberen rechten Ecke">
+        <Frame>
+            <img src="/images/interfaz-3.png" alt="Chatbot-ID" />
+        </Frame>
+    </Step>
+</Steps>
+
+## WhatsApp-Integration
+<Card title="WhatsApp-Tutorial" icon="whatsapp" href="de/integrations/whatsapp">
+  Greifen Sie auf das Tutorial zu, um Ihren Chatbot mit WhatsApp zu integrieren.
+</Card>
+
+## Shopify-Integration
+<Card title="Shopify-Tutorial" icon="shop" href="de/integrations/shopify">
+  Greifen Sie auf das Tutorial zu, um Ihren Chatbot mit Shopify zu integrieren.
+</Card>
+
+## Messenger-Integration
+<Card title="Messenger-Tutorial" icon="facebook-messenger" href="de/integrations/messenger">
+  Greifen Sie auf das Tutorial zu, um Ihren Chatbot mit Facebook Messenger zu integrieren.
+</Card>
+
+## Instagram-Integration
+<Card title="Instagram-Tutorial" icon="instagram" href="de/integrations/instagram">
+  Greifen Sie auf das Tutorial zu, um Ihren Chatbot mit Instagram zu integrieren.
+</Card>
+

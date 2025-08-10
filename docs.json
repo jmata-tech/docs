@@ -103,6 +103,52 @@
             ]
           }
         ]
+      },
+      {
+        "language": "de",
+        "anchors": [
+          {
+            "anchor": "Dokumentation",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Schnellstart",
+                "pages": [
+                  "de/introduction",
+                  "de/quickstart",
+                  "de/development"
+                ]
+              },
+              {
+                "group": "Chatbot",
+                "pages": [
+                  "de/chatbot/conversations",
+                  "de/chatbot/share",
+                  "de/chatbot/settings",
+                  "de/chatbot/admin-settings"
+                ]
+              },
+              {
+                "group": "Integrationen",
+                "pages": [
+                  "de/integrations/whatsapp",
+                  "de/integrations/shopify",
+                  "de/integrations/hubspot",
+                  "de/integrations/google-calendar",
+                  "de/integrations/zendesk",
+                  "de/integrations/messenger",
+                  "de/integrations/instagram"
+                ]
+              },
+              {
+                "group": "Partner",
+                "pages": [
+                  "de/affiliates/affiliates"
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "global": {
