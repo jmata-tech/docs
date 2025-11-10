@@ -36,6 +36,14 @@
                 ]
               },
               {
+                "group": "Mensajes",
+                "pages": [
+                  "en/messages/contacts",
+                  "en/messages/lists",
+                  "en/messages/campaigns"
+                ]
+              },
+              {
                 "group": "Integrations",
                 "pages": [
                   "en/integrations/whatsapp",
@@ -83,6 +91,14 @@
                 ]
               },
               {
+                "group": "Mensajes",
+                "pages": [
+                  "es/mensajes/contactos",
+                  "es/mensajes/listas",
+                  "es/mensajes/campaigns"
+                ]
+              },
+              {
                 "group": "Integraciones",
                 "pages": [
                   "es/integrations/whatsapp",
@@ -117,6 +133,14 @@
                   "de/introduction",
                   "de/quickstart",
                   "de/development"
+                ]
+              },
+              {
+                "group": "Nachricht",
+                "pages":[
+                  "de/messages/contacts",
+                  "de/messages/lists",
+                  "de/messages/campaigns"
                 ]
               },
               {
