@@ -190,3 +190,55 @@ Mit diesem Werkzeug können Sie Ihren Bot so einrichten, dass er jeden beliebige
 <Tip>
 Ihr Chatbot wird automatisch wissen, wann er dieses Werkzeug verwenden muss, basierend auf der von Ihnen bereitgestellten Beschreibung. Seien Sie spezifisch, wann und wie es verwendet werden soll.
 </Tip>
+
+
+## Dateien teilen
+
+Das Datei-Sharing-Werkzeug ermöglicht es Ihnen als Administrator, Benutzern automatisch Dateien während der Gespräche mit dem Chatbot bereitzustellen.
+
+### Hauptmerkmale
+
+- **Dateien mit Benutzern teilen**: Konfigurieren Sie Dateien (Bilder oder PDFs), die der Chatbot automatisch bereitstellt, wenn eine bestimmte Situation während der Konversation ausgelöst wird.
+
+- **Datei-Upload durch Benutzer**: Benutzer können Dateien direkt an den Chatbot hochladen, wenn diese Funktionalität aktiviert ist.
+
+- **Verwaltung über das Dashboard**: Sie haben die Möglichkeit, Dateien manuell über das Dashboard hochzuladen, sodass der Chatbot bei Bedarf zusätzliche Informationen an Benutzer senden kann.
+
+<Frame>
+  <img src="/images/tools/es/agregarFile.png" alt="Agregar archivo" />
+</Frame>
+
+
+### Datei zum Teilen konfigurieren
+
+<Steps>
+  <Step title="Datei hinzufügen">
+    Um eine Datei zu konfigurieren, die der Chatbot Benutzern bereitstellt, müssen Sie das folgende Formular ausfüllen:
+
+    - **Dateiname**: Geben Sie den Namen ein, mit dem die Datei identifiziert und an Benutzer gesendet wird.
+    
+    - **Aktivierungssituation**: Beschreiben Sie, wann diese Datei Benutzern bereitgestellt werden soll. Zum Beispiel: "wenn der Benutzer nach dem Katalog fragt" oder "wenn sie Kontaktinformationen anfordern". Diese Beschreibung hilft dem Chatbot zu erkennen, wann die Datei geteilt werden soll.
+    
+    - **Beschreibung** (optional): Geben Sie eine optionale Beschreibung des Inhalts der Datei an. Diese Informationen können dem Benutzer helfen zu verstehen, was er erhalten wird.
+    
+    - **Datei hochladen**: Wählen Sie die Datei aus, die Sie teilen möchten. Sie können Bilder oder PDF-Dateien mit einer maximalen Größe von 10MB hochladen.
+
+    <Frame>
+      <img src="/images/tools/es/agregarFile.png" alt="Datei hinzufügen" />
+    </Frame>
+  </Step>
+</Steps>
+
+### Wie es funktioniert
+
+Wenn Sie eine Datei zum Teilen konfigurieren, funktioniert der Prozess folgendermaßen:
+
+1. **Die Aktivierungssituation tritt in der Konversation auf**: Der Benutzer erwähnt oder fragt etwas, das mit der von Ihnen konfigurierten Aktivierungssituation übereinstimmt.
+
+2. **Der Chatbot erkennt die Situation und antwortet**: Der Chatbot erkennt, dass er die Datei basierend auf der konfigurierten Aktivierungssituation bereitstellen sollte.
+
+3. **Der Benutzer erhält die Datei oder den Download-Link**: Der Chatbot stellt die Datei automatisch für den Benutzer bereit, entweder als Anhang oder als Download-Link, abhängig von der Integrationsplattform.
+
+<Tip>
+Stellen Sie sicher, dass Sie bei der Aktivierungssituation spezifisch sind.
+</Tip>
