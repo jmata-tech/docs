@@ -193,3 +193,53 @@ Tu chatbot automáticamente sabrá cuándo usar esta herramienta basándose en l
 </Tip>
 
 
+## Compartir archivos
+
+La herramienta de compartir archivos te permite como administrador proporcionar archivos a tus usuarios de manera automática durante las conversaciones con el chatbot.
+
+### Funcionalidades principales
+
+- **Compartir archivos con usuarios**: Configura archivos (imágenes o PDFs) que el chatbot proporcionará automáticamente cuando se active una situación específica durante la conversación.
+
+- **Subida de archivos por usuarios**: Los usuarios pueden subir archivos directamente al chatbot cuando esta funcionalidad está activada.
+
+- **Gestión desde el dashboard**: Tienes la opción de subir archivos manualmente desde el dashboard, permitiendo al chatbot enviar información adicional a los usuarios cuando sea necesario.
+
+<Frame>
+  <img src="/images/tools/es/shareFiles.png" alt="custom-tool" />
+</Frame>
+
+
+### Configurar archivo para compartir
+
+<Steps>
+  <Step title="Agregar archivo">
+    Para configurar un archivo que el chatbot proporcionará a los usuarios, necesitas completar el siguiente formulario:
+
+    - **Nombre del archivo**: Ingresa el nombre con el cual se identificará y enviará el archivo a los usuarios.
+    
+    - **Situación de activación**: Describe cuándo se debe proporcionar este archivo a los usuarios. Por ejemplo, "cuando el usuario pregunte por el catálogo" o "cuando soliciten información de contacto". Esta descripción ayuda al chatbot a reconocer cuándo debe compartir el archivo.
+    
+    - **Descripción** (opcional): Proporciona una descripción opcional de lo que contiene el archivo. Esta información puede ayudar al usuario a entender qué recibirá.
+    
+    - **Subir archivo**: Selecciona el archivo que deseas compartir. Puedes subir imágenes o archivos PDF con un tamaño máximo de 10MB.
+
+    <Frame>
+      <img src="/images/tools/es/agregarFile.png" alt="Agregar archivo" />
+    </Frame>
+  </Step>
+</Steps>
+
+### Cómo funciona
+
+Cuando configuras un archivo para compartir, el proceso funciona de la siguiente manera:
+
+1. **La situación de activación ocurre en la conversación**: El usuario menciona o pregunta algo que coincide con la situación de activación que configuraste.
+
+2. **El chatbot reconoce la situación y responde**: El chatbot identifica que debe proporcionar el archivo basándose en la situación de activación configurada.
+
+3. **El usuario recibe el archivo o enlace de descarga**: El chatbot automáticamente proporciona el archivo al usuario, ya sea como archivo adjunto o como enlace de descarga, dependiendo de la plataforma de integración.
+
+<Tip>
+Asegúrate de ser específico en la situación de activación.
+</Tip>
