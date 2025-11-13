@@ -1,6 +1,6 @@
 ---
 title: 'WhatsApp'
-description: 'Integrate your chatbot with WhatsApp for a seamless user experience.'
+description: 'How to integrate your chatbot with WhatsApp for a smooth user experience.'
 icon: 'whatsapp'
 ---
 ## Video Tutorial
@@ -8,103 +8,119 @@ icon: 'whatsapp'
   Watch the tutorial to integrate your chatbot with WhatsApp.
 </Card>
 
-[Create your chatbot here](https://doko-ai.com/en/sign-up)
+[Create your chatbot here](https://doko-ai.com/es/sign-up)
 
 ### Prerequisites
 
-1. Create a Meta Business Portfolio
+1. Create a Meta Business Portfolio  
 You need to have a Meta Business Portfolio to use the WhatsApp integration.
 
 You can create a business portfolio at [Meta for Business](https://www.facebook.com/business/help/1710077379203657).
 
-2. Get an exclusive phone number for this chatbot
-
-You need to obtain a phone number that hasn't been used with WhatsApp Business before.
+2. Get a dedicated phone number for this chatbot  
+You need to get a phone number that hasn’t been used with WhatsApp Business before.
 
 <Steps>
     <Step>
         <h3>Go to Tools in your chatbot portal</h3>
        <Frame>
-  <img src="/images/integraciones-2.png" alt="Integrations" />
-</Frame>
-    </Step>
- <Step>
-        <h3>If you already meet the prerequisites, mark step 1 as completed</h3>
-       <Frame>
-  <img src="/images/completado.png" alt="Completed" />
+  <img src="/images/integrations/whatsapp/en/wha.png" alt="Integrations" />
 </Frame>
     </Step>
      <Step>
         <h3>Connect your Meta Business Portfolio with Doko</h3>
        <Frame>
-  <img src="/images/sesion-fb.png" alt="FB Session" />
+  <img src="/images/integrations/whatsapp/en/conecta-facebook.png" alt="FB Session" />
 </Frame>
     </Step>
-    <Step>
-        <h3>Complete the Facebook login</h3>
-       <Frame>
-  <img src="/images/connect-fb.png" alt="Connect FB" />
- 
-</Frame>
- Connect your account with Doko
- <Frame>
-  <img src="/images/conecta-empresa.png" alt="Connect Business" />
-</Frame>
-  Complete your Business Portfolio information
- <Frame>
-  <img src="/images/conecta-portafolio.png" alt="Connect Portfolio" />
-</Frame>
-  Create or connect your WhatsApp Business account
- <Frame>
-  <img src="/images/conecta-wa.png" alt="Connect WA" />
-</Frame>
-<Frame>
-  <img src="/images/crea-wa.png" alt="Create WA" />
-</Frame>
- Verify your phone number
 
+    <Step>
+        <h3>Complete the login with Facebook</h3>
+
+        <Frame>
+          <img src="/images/integrations/whatsapp/conecta-empresa.png" alt="Connect Company" />
+        </Frame>
+          Complete your business portfolio information.
+        <Frame>
+          <img src="/images/integrations/whatsapp/conecta-portafolio.png" alt="Connect Portfolio" />
+        </Frame>
+
+        ### Option 1: Create WhatsApp Business Profile
+
+        Create your WhatsApp Business account.
+        <Frame>
+          <img src="/images/integrations/whatsapp/conecta-wa.png" alt="Connect WA" />
+        </Frame>
+        Enter your company details.
+        <Frame>
+          <img src="/images/integrations/whatsapp/crea-wa.png" alt="Create WA" />
+        </Frame>
+
+        ### Option 2: Connect WhatsApp Business
+
+        Enter your phone number to start the connection.
+        <Frame>
+          <img src="/images/integrations/whatsapp/ingresa-num.png" alt="Connect WA" />
+        </Frame>
+
+        When Facebook verifies your phone number, it will take you to the next step. To confirm that you are the business owner, it will display a QR code on screen to scan and verify, but it often throws an error when generating it.
+
+        <Frame>
+          <img src="/images/integrations/whatsapp/error.png" alt="Connect WA" />
+        </Frame>
+
+        <Danger>
+        To fix the error, you must select the "Back" option to return to the previous page and re-enter the phone number.  
+
+        If you select the <i>"Add a new WhatsApp number"</i> bar, you can choose the profile you created to proceed to the next part of the integration.
+        </Danger>
+
+        <Frame>
+          <img src="/images/integrations/whatsapp/error-solucion.png" alt="Connect WA" />
+        </Frame>
+
+        
     </Step>
+
     <Step>
         <h3>Set up a payment method</h3>
-        <Warning>This step is necessary to be able to talk with your chatbot</Warning>
+        <Warning>This step is required by Meta to be able to talk to your chatbot.</Warning>
 
        Please verify your payment methods to continue with the onboarding process.
 
 You can follow this article to add a payment method to your WhatsApp Business account: [Add payment methods to your account](https://www.facebook.com/business/help/488291839463771)
     </Step>
     <Step>
-        <h3>Start talking with your chatbot</h3>
+        <h3>Start chatting with your chatbot</h3>
        <Frame>
-  <img src="/images/habla-bot.png" alt="Chat Bot" />
+  <img src="/images/integrations/whatsapp/en/whaIntegration.png" alt="Chat Bot" />
 </Frame>
     </Step>
 </Steps>
 
-
 ### Live Mode
+Live mode is a useful tool that allows the conversation to be transferred to a human agent.  
+When activated, the bot automatically deactivates, allowing the agent to reply directly to the client’s messages.
 
-Live mode is a useful tool that allows you to transfer the conversation to a human agent. 
-When activated, the bot is automatically disabled, allowing the agent to respond directly to customer messages.
-
-Live chat has only 2 states:
-- **Enabled:** any message sent to the customer via WhatsApp Business will activate live mode, so bot responses will stop.
-- **Disabled:** requires you to manually configure an activation phrase to turn on live chat.
+Live chat only has two states:
+- **Enabled:** any message sent to the client through WhatsApp Business will activate live mode, stopping bot responses.  
+- **Disabled:** requires you to manually set up an activation phrase so that when the admin sends it, the user can communicate with a human agent for support.
 
 <Frame>
-  <img src="/images/integrations/es/confModoVivo.png" alt="Chat Bot" />
+  <img src="/images/integrations/whatsapp/en/confModoVivo.png" alt="Chat Bot" />
 </Frame>
-
 
 ### Reactivation
 
-Set a phrase for users to automatically reactivate the chatbot from live mode. This feature is only available for WhatsApp accounts connected with the mobile application.
+Set a phrase so users can automatically reactivate the chatbot from live mode.  
+This phrase will disable live mode until further notice, allowing the bot to take control of the conversation again.
 
-The message only needs to contain the configured phrase.
+The message just needs to contain the configured phrase.
 
 <Tip>
-You can configure quick replies in WhatsApp Business to make it easier for users to send the exact phrase. [Learn how to configure quick replies](https://www.facebook.com/business/help/).
+You can set up quick replies in WhatsApp Business to make it easier for users to send the exact phrase. [Learn how to set up quick replies](https://www.facebook.com/business/help/).
 </Tip>
 
 <Frame>
-  <img src="/images/integrations/es/frase.png" alt="Chat Bot" />
+  <img src="/images/integrations/whatsapp/en/frase.png" alt="Chat Bot" />
 </Frame>

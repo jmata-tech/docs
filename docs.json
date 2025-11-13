@@ -32,7 +32,8 @@
                   "en/chatbot/conversations",
                   "en/chatbot/share",
                   "en/chatbot/settings",
-                  "en/chatbot/admin-settings"
+                  "en/chatbot/admin-settings",
+                  "en/chatbot/database"
                 ]
               },
               {
@@ -47,12 +48,13 @@
                 "group": "Integrations",
                 "pages": [
                   "en/integrations/whatsapp",
+                  "en/integrations/instagram",
+                  "en/integrations/messenger",
                   "en/integrations/shopify",
                   "en/integrations/hubspot",
                   "en/integrations/google-calendar",
-                  "en/integrations/zendesk",
-                  "en/integrations/messenger",
-                  "en/integrations/instagram"
+                  "en/integrations/zendesk"
+
                 ]
               },
               {
@@ -87,7 +89,8 @@
                   "es/chatbot/conversations",
                   "es/chatbot/share",
                   "es/chatbot/settings",
-                  "es/chatbot/admin-settings"
+                  "es/chatbot/admin-settings",
+                  "es/chatbot/database"
                 ]
               },
               {
@@ -102,12 +105,13 @@
                 "group": "Integraciones",
                 "pages": [
                   "es/integrations/whatsapp",
-                  "es/integrations/shopify",
+                  "es/integrations/instagram",
+                  "es/integrations/messenger",
+                  "es/integrations/shopify",                  
                   "es/integrations/hubspot",
                   "es/integrations/google-calendar",
-                  "es/integrations/zendesk",
-                  "es/integrations/messenger",
-                  "es/integrations/instagram"
+                  "es/integrations/zendesk"
+
                 ]
               },
               {
@@ -149,19 +153,21 @@
                   "de/chatbot/conversations",
                   "de/chatbot/share",
                   "de/chatbot/settings",
-                  "de/chatbot/admin-settings"
+                  "de/chatbot/admin-settings",
+                  "de/chatbot/database"
                 ]
               },
               {
                 "group": "Integrationen",
                 "pages": [
                   "de/integrations/whatsapp",
+                  "de/integrations/instagram",
+                  "de/integrations/messenger",
                   "de/integrations/shopify",
                   "de/integrations/hubspot",
                   "de/integrations/google-calendar",
-                  "de/integrations/zendesk",
-                  "de/integrations/messenger",
-                  "de/integrations/instagram"
+                  "de/integrations/zendesk"
+                  
                 ]
               },
               {

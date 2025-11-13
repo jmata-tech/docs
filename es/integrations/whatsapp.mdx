@@ -1,6 +1,6 @@
 ---
 title: 'WhatsApp'
-description: 'Como integrar tu chatbot en WhatsApp para una experiencia de usuario fluida.'
+description: 'Cómo integrar tu chatbot en WhatsApp para una experiencia de usuario fluida.'
 icon: 'whatsapp'
 ---
 ## Video Tutorial
@@ -14,10 +14,10 @@ icon: 'whatsapp'
 
 ### Requisitos previos
 
-1. Crea un portfolio de negocio de Meta
-Necesitas tener un portfolio de negocio de Meta para usar la integración de WhatsApp.
+1. Crea un portafolio de negocio de Meta
+Necesitas tener un portafolio de negocio de Meta para usar la integración de WhatsApp.
 
-Puedes crear un portfolio de negocio en [Meta for Business](https://www.facebook.com/business/help/1710077379203657).
+Puedes crear un portafolio de negocio en [Meta for Business](https://www.facebook.com/business/help/1710077379203657).
 
 2. Obtén un número de teléfono exclusivo para este chatbot
 
@@ -27,49 +27,69 @@ Necesitas obtener un número de teléfono que no haya sido usado con WhatsApp Bu
     <Step>
         <h3>Ingresa en Herramientas en el portal de tu chatbot</h3>
        <Frame>
-  <img src="/images/integraciones-2.png" alt="Integrations" />
-</Frame>
-    </Step>
- <Step>
-        <h3>Si ya cuentas con los requisitos previos, marca como completado el paso 1</h3>
-       <Frame>
-  <img src="/images/completado.png" alt="Completado" />
+  <img src="/images/integrations/whatsapp/es/wha.png" alt="Integrations" />
 </Frame>
     </Step>
      <Step>
-        <h3>Conecta tu portfolio de negocio de Meta con Doko</h3>
+        <h3>Conecta tu portafolio de negocio de Meta con Doko</h3>
        <Frame>
-  <img src="/images/sesion-fb.png" alt="Sesion FB" />
+  <img src="/images/integrations/whatsapp/es/conecta-facebook.png" alt="Sesion FB" />
 </Frame>
     </Step>
+
+
+
+
     <Step>
-        <h3>Completa el inicio de sesión con Facebook</h3>
-       <Frame>
-  <img src="/images/connect-fb.png" alt="Connect FB" />
- 
-</Frame>
- Conecta tu cuenta con Doko
- <Frame>
-  <img src="/images/conecta-empresa.png" alt="Conecta Empresa" />
-</Frame>
-  Completa la información de tu Portfolio comercial
- <Frame>
-  <img src="/images/conecta-portafolio.png" alt="Conecta Portafolio" />
-</Frame>
-  Crea o conecta tu cuenta de WhatsApp Business
- <Frame>
-  <img src="/images/conecta-wa.png" alt="Conecta WA" />
-</Frame>
-<Frame>
-  <img src="/images/crea-wa.png" alt="Crear WA" />
-</Frame>
- Verifica tu número de teléfono
+      <h3>Completa el inicio de sesión con Facebook</h3>
+
+      <Frame>
+        <img src="/images/integrations/whatsapp/conecta-empresa.png" alt="Conecta Empresa" />
+      </Frame>
+        Completa la información de tu Portafolio comercial
+      <Frame>
+        <img src="/images/integrations/whatsapp/conecta-portafolio.png" alt="Conecta Portafolio" />
+      </Frame>
 
 
+      ### Opción 1: Crear perfil de Whatsapp Business
+        Crea tu cuenta de WhatsApp Business
+        <Frame>
+          <img src="/images/integrations/whatsapp/conecta-wa.png" alt="Conecta WA" />
+        </Frame>
+        Ingresa los datos de tu empresa
+        <Frame>
+          <img src="/images/integrations/whatsapp/crea-wa.png" alt="Crear WA" />
+        </Frame>
+
+      ### Opción 2: Conectar con Whatsapp Business
+        Ingresa tu número de teléfono para iniciar la conexión
+        <Frame>
+          <img src="/images/integrations/whatsapp/ingresa-num.png" alt="Conecta WA" />
+        </Frame>
+
+        Cuando Facebook verifique tu número de teléfono te mandará a la siguiente parte en donde, para confirmar que efectivamente eres tú el dueño del negocio te pondrá un QR en pantalla para escanear y verificar, pero al generarlo casi siempre manda un error.
+
+        <Frame>
+          <img src="/images/integrations/whatsapp/error.png" alt="Conecta WA" />
+        </Frame>
+
+        <Danger>
+          Para solucionar el error se tendrá que seleccionar la opción de "Volver" para regresar a la página anterior y volver a poner el número de teléfono nuevamente. 
+          
+          
+          Si seleccionamos la barra de <i>"Agregar un nuevo número de Whatsapp"</i>, podemos seleccionar nuestro perfil que creamos para pasar a la siguiente parte de la integración.
+        </Danger>
+
+        <Frame>
+          <img src="/images/integrations/whatsapp/error-solucion.png" alt="Conecta WA" />
+        </Frame>
+        
     </Step>
+
     <Step>
         <h3>Gestiona un método de pago </h3>
-        <Warning>Este paso es necesario para poder hablar con tu chatbot</Warning>
+        <Warning>Este paso para Meta es necesario para poder hablar con tu chatbot</Warning>
 
        Por favor, verifica tus métodos de pago para continuar con el proceso de incorporación.
 
@@ -78,10 +98,13 @@ Puedes seguir este artículo para agregar un método de pago a tu cuenta de What
     <Step>
         <h3>Empieza a hablar con tu chatbot</h3>
        <Frame>
-  <img src="/images/habla-bot.png" alt="Habla Bot" />
+  <img src="/images/integrations/whatsapp/es/whaIntegration.png" alt="Habla Bot" />
 </Frame>
     </Step>
 </Steps>
+
+
+
 
 
 ### Modo en Vivo
@@ -90,16 +113,16 @@ Al activarlo, el bot se desactiva automáticamente, permitiendo que el agente re
 
 El chat en vivo solo tiene 2 estados:
 - **Habilitado:** cualquier mensaje enviado al cliente mediante WhatsApp Business activará el modo en vivo, por lo que las respuestas del bot van a parar.
-- **Deshabilitado:** requiere que configures manualmente una frase de activación para poder encender el chat en vivo.
+- **Deshabilitado:** requiere que configures manualmente una frase de activación para que cuando el administrador envíe la frase, el usuario se pueda comunicar con un agente humano para darle soporte.
 
 <Frame>
-  <img src="/images/integrations/es/confModoVivo.png" alt="Habla Bot" />
+  <img src="/images/integrations/whatsapp/es/confModoVivo.png" alt="Habla Bot" />
 </Frame>
 
 
 ### Reactivación
 
-Establece una frase para que los usuarios reactiven automáticamente el chatbot desde el modo en vivo. Esta función solo está disponible para cuentas de WhatsApp conectadas con la aplicación móvil.
+Establece una frase para que los usuarios reactiven automáticamente el chatbot desde el modo en vivo. Esta frase hará que el modo en vivo quede deshabilitado hasta nuevo aviso, por lo que el bot tomará el control de la conversación nuevamente.
 
 El mensaje solo necesita contener la frase configurada.
 
@@ -108,7 +131,7 @@ Puedes configurar respuestas rápidas en WhatsApp Business para facilitar que lo
 </Tip>
 
 <Frame>
-  <img src="/images/integrations/es/frase.png" alt="Habla Bot" />
+  <img src="/images/integrations/whatsapp/es/frase.png" alt="Habla Bot" />
 </Frame>
 
 
