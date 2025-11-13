@@ -6,17 +6,17 @@ icon: 'gear'
 
 ## Lead Generation
 
-Configure your chatbot to collect valuable lead information during conversations.
+Configure your chatbot to collect valuable lead information during conversations. This will allow the chatbot to remember valuable user data to enhance the user experience.
 
 ### Customizable Fields
 
-- Name and Contact Information
 - Email
+- Contact Information
+- Motive (schedule appointment, support ticket, etc.)
 - Phone Number
-- Query Subject
 
 <Frame>
-  <img src="/images/leads-config.png" alt="Lead Fields" />
+  <img src="/images/tools/en/leads.png" alt="Lead Fields" />
 </Frame>
 
 ## Appointment Scheduling
@@ -31,12 +31,12 @@ Allow users to schedule appointments directly through your chatbot.
 - Timezone handling
 
 <Frame>
-  <img src="/images/appointment-tool.png" alt="Appointment Tool" />
+  <img src="/images/tools/en/meeting.png" alt="Appointment Tool" />
 </Frame>
 
 ## Support Tickets
 
-Optimize customer support by automatically creating and managing support tickets.
+Enhance customer support efficiency by automatically creating, organizing, and tracking support tickets, ensuring faster issue resolution, better communication, and improved customer satisfaction.
 
 ### Main Features
 
@@ -48,12 +48,18 @@ Optimize customer support by automatically creating and managing support tickets
 - Resolution tracking
 
 <Frame>
-  <img src="/images/support-ticket.png" alt="Support Ticket" />
+  <img src="/images/tools/en/ticket-soporte.png" alt="Support Ticket" />
 </Frame>
 
 ## Live Chat
 
 Take control of conversations when needed with the live chat feature.
+
+The tool allows the chatbot administrator to take control of the conversation so that a human agent can answer the user's questions or concerns.
+
+<Frame>
+  <img src="/images/live-chat.png" alt="Live Chat" />
+</Frame>
 
 ### Main Features
 
@@ -63,7 +69,7 @@ Take control of conversations when needed with the live chat feature.
 - User information display
 
 <Frame>
-  <img src="/images/live-chat.png" alt="Live Chat" />
+  <img src="/images/tools/live-chat.png" alt="Live Chat" />
 </Frame>
 
 ## Process Orders
@@ -106,6 +112,59 @@ With this tool, you can customize the information you want to get from your clie
   </Step>  
 </Steps>
 
+
+## Share Files
+
+The file sharing tool allows you as an administrator to provide files to your users automatically during conversations with the chatbot.
+
+### Main Features
+
+- **Share files with users**: Configure files (images or PDFs) that the chatbot will automatically provide when a specific situation is triggered during the conversation.
+
+- **File upload by users**: Users can upload files directly to the chatbot when this functionality is enabled.
+
+- **Management from dashboard**: You have the option to upload files manually from the dashboard, allowing the chatbot to send additional information to users when necessary.
+
+<Frame>
+  <img src="/images/tools/es/shareFiles.png" alt="custom-tool" />
+</Frame>
+
+
+### Configure File to Share
+
+To configure a file that the chatbot will provide to users, you need to complete the following form:
+
+- **File Name**: Enter the name with which the file will be identified and sent to users.
+
+- **Activation Situation**: Describe when this file should be provided to users. For example, "when the user asks for the catalog" or "when they request contact information". This description helps the chatbot recognize when to share the file.
+
+<Frame>
+  <img src="/images/tools/en/agregarFile.png" alt="Add file" />
+</Frame>
+
+- **Description** (optional): Provide an optional description of what the file contains.
+
+- **Upload File**: Select the file you want to share. You can upload images or PDF files with a maximum size of 10MB.
+
+<Frame>
+  <img src="/images/tools/en/descripcion-file.png" alt="Add file" />
+</Frame>
+
+
+
+### How It Works
+
+When you configure a file to share, the process works as follows:
+
+1. **The activation situation occurs in the conversation**: The user mentions or asks something that matches the activation situation you configured.
+
+2. **The chatbot recognizes the situation and responds**: The chatbot identifies that it should provide the file based on the configured activation situation.
+
+3. **The user receives the file or download link**: The chatbot automatically provides the file to the user, either as an attachment or as a download link, depending on the integration platform.
+
+<Tip>
+Make sure to be specific in the activation situation.
+</Tip>
 
 ## Custom Tool (API) 
 
@@ -189,56 +248,4 @@ With this tool you can enable your bot to use any API endpoint as you want.
 
 <Tip>
 Your chatbot will automatically know when to use this tool based on the description you provide. Be specific about when and how it should be used.
-</Tip>
-
-
-## Share Files
-
-The file sharing tool allows you as an administrator to provide files to your users automatically during conversations with the chatbot.
-
-### Main Features
-
-- **Share files with users**: Configure files (images or PDFs) that the chatbot will automatically provide when a specific situation is triggered during the conversation.
-
-- **File upload by users**: Users can upload files directly to the chatbot when this functionality is enabled.
-
-- **Management from dashboard**: You have the option to upload files manually from the dashboard, allowing the chatbot to send additional information to users when necessary.
-
-<Frame>
-  <img src="/images/tools/es/shareFiles.png" alt="custom-tool" />
-</Frame>
-
-
-### Configure File to Share
-
-<Steps>
-  <Step title="Add File">
-    To configure a file that the chatbot will provide to users, you need to complete the following form:
-
-    - **File Name**: Enter the name with which the file will be identified and sent to users.
-    
-    - **Activation Situation**: Describe when this file should be provided to users. For example, "when the user asks for the catalog" or "when they request contact information". This description helps the chatbot recognize when to share the file.
-    
-    - **Description** (optional): Provide an optional description of what the file contains. This information can help the user understand what they will receive.
-    
-    - **Upload File**: Select the file you want to share. You can upload images or PDF files with a maximum size of 10MB.
-
-    <Frame>
-      <img src="/images/tools/es/agregarFile.png" alt="Add file" />
-    </Frame>
-  </Step>
-</Steps>
-
-### How It Works
-
-When you configure a file to share, the process works as follows:
-
-1. **The activation situation occurs in the conversation**: The user mentions or asks something that matches the activation situation you configured.
-
-2. **The chatbot recognizes the situation and responds**: The chatbot identifies that it should provide the file based on the configured activation situation.
-
-3. **The user receives the file or download link**: The chatbot automatically provides the file to the user, either as an attachment or as a download link, depending on the integration platform.
-
-<Tip>
-Make sure to be specific in the activation situation.
 </Tip>
