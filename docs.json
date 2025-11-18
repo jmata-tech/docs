@@ -31,7 +31,6 @@
                 "pages": [
                   "en/chatbot/conversations",
                   "en/chatbot/share",
-                  "en/chatbot/settings",
                   "en/chatbot/admin-settings",
                   "en/chatbot/database"
                 ]
@@ -55,6 +54,20 @@
                   "en/integrations/google-calendar",
                   "en/integrations/zendesk"
 
+                ]
+              },
+              {
+                "group": "Herramientas",
+                "pages": [
+                  "en/herramientas/leads",
+                  "en/herramientas/citas",
+                  "en/herramientas/soporte",
+                  "en/herramientas/chat-vivo",
+                  "en/herramientas/pedidos",
+                  "en/herramientas/formulario",
+                  "en/herramientas/busqueda-google",
+                  "en/herramientas/compartir-archivos",
+                  "en/herramientas/api"
                 ]
               },
               {
@@ -88,7 +101,6 @@
                 "pages": [
                   "es/chatbot/conversations",
                   "es/chatbot/share",
-                  "es/chatbot/settings",
                   "es/chatbot/admin-settings",
                   "es/chatbot/database"
                 ]
@@ -112,6 +124,20 @@
                   "es/integrations/google-calendar",
                   "es/integrations/zendesk"
 
+                ]
+              },
+              {
+                "group": "Herramientas",
+                "pages": [
+                  "es/herramientas/leads",
+                  "es/herramientas/citas",
+                  "es/herramientas/soporte",
+                  "es/herramientas/chat-vivo",
+                  "es/herramientas/pedidos",
+                  "es/herramientas/formulario",
+                  "es/herramientas/busqueda-google",
+                  "es/herramientas/compartir-archivos",
+                  "es/herramientas/api"
                 ]
               },
               {
@@ -140,6 +166,15 @@
                 ]
               },
               {
+                "group": "Chatbot",
+                "pages": [
+                  "de/chatbot/conversations",
+                  "de/chatbot/share",
+                  "de/chatbot/admin-settings",
+                  "de/chatbot/database"
+                ]
+              },
+              {
                 "group": "Nachricht",
                 "pages":[
                   "de/messages/contacts",
@@ -147,16 +182,7 @@
                   "de/messages/campaigns"
                 ]
               },
-              {
-                "group": "Chatbot",
-                "pages": [
-                  "de/chatbot/conversations",
-                  "de/chatbot/share",
-                  "de/chatbot/settings",
-                  "de/chatbot/admin-settings",
-                  "de/chatbot/database"
-                ]
-              },
+              
               {
                 "group": "Integrationen",
                 "pages": [
@@ -168,6 +194,20 @@
                   "de/integrations/google-calendar",
                   "de/integrations/zendesk"
                   
+                ]
+              },
+              {
+                "group": "Herramientas",
+                "pages": [
+                  "de/herramientas/leads",
+                  "de/herramientas/citas",
+                  "de/herramientas/soporte",
+                  "de/herramientas/chat-vivo",
+                  "de/herramientas/pedidos",
+                  "de/herramientas/formulario",
+                  "de/herramientas/busqueda-google",
+                  "de/herramientas/compartir-archivos",
+                  "de/herramientas/api"
                 ]
               },
               {
