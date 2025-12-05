@@ -1,0 +1,157 @@
+---
+title: 'Shopify-Agent'
+description: 'Entdecken Sie die Shopify-Agent-Tools, die es Ihrem Chatbot ermöglichen, nach Produkten zu suchen, den Bestand zu überprüfen, Bestellungen zu verfolgen und auf Sammlungen zuzugreifen.'
+---
+
+## Shopify-Agent-Tools
+
+Diese Tools arbeiten intern, um Ihrem Chatbot vollständige Shopify-Shop-Funktionen zu bieten. Ihre Agenten können nach Produkten suchen, den Bestand überprüfen, Bestellungen verfolgen und mehr.
+
+<Note>
+Diese Tools arbeiten automatisch im Hintergrund. Benutzer interagieren natürlich mit Ihrem Chatbot, und der Agent wählt diese Tools intelligent aus und verwendet sie, um genaue und aktuelle Informationen über Ihren Shop bereitzustellen.
+</Note>
+
+<CardGroup cols={2}>
+  <Card
+    title="Produkte"
+    icon="box"
+    href="#productos"
+  >
+    Suchen und erhalten Sie detaillierte Informationen über Produkte aus Ihrem Shop
+  </Card>
+  <Card
+    title="Produkt"
+    icon="box"
+    href="#getproduct"
+  >
+    Erhalten Sie detaillierte Informationen über ein bestimmtes Produkt
+  </Card>
+  <Card
+    title="Sammlungen"
+    icon="folder"
+    href="#colecciones"
+  >
+    Zugriff auf Sammlungen und bessere Organisation Ihres Katalogs
+  </Card>
+  <Card
+    title="Bestellungen"
+    icon="truck"
+    href="#pedidos"
+  >
+    Verfolgen und Abfragen des Bestellstatus
+  </Card>
+</CardGroup>
+
+
+## Produkte 
+
+### getProducts
+
+Erhalten Sie eine Liste von Produkten aus dem Shop mit optionaler Filterung.
+
+**Verfügbare Felder:**
+
+| Feld | Typ | Erforderlich | Beschreibung |
+|------|-----|--------------|--------------|
+| `productName` | string | Optional | Produkte nach Namen filtern |
+| `variantName` | string | Optional | Nach Variantennamen filtern (Farbe, Größe, etc.) |
+| `productType` | string | Optional | Nach Produkttyp/Kategorie filtern |
+| `productTag` | string | Optional | Nach Produkt-Tag filtern |
+| `productVendor` | string | Optional | Nach Produktlieferant filtern |
+| `minPrice` | number | Optional | Mindestpreisfilter (Standard 0, wenn nicht angegeben) |
+| `maxPrice` | number | Optional | Höchstpreisfilter (Standard 0, wenn nicht angegeben) |
+| `bringOnlyAvailable` | boolean | Optional | Filtern, um nur lagernde Produkte anzuzeigen (Standard false) |
+
+<Accordion title="Verwendungsbeispiele" defaultOpen>
+- *Benutzer:* "Welche T-Shirts haben Sie verfügbar?"
+  - *Der Agent verwendet:* `getProducts` mit `productName: "T-Shirt"` und `bringOnlyAvailable: true`
+
+- *Benutzer:* "Zeigen Sie mir Schuhprodukte zwischen 50 und 100 Dollar"
+  - *Der Agent verwendet:* `getProducts` mit `productType: "Schuhe"`, `minPrice: 50`, `maxPrice: 100`
+
+- *Benutzer:* "Haben Sie blaue Hemden?"
+  - *Der Agent verwendet:* `getProducts` mit `productName: "Hemd"` und `variantName: "blau"`
+</Accordion>
+
+### getProduct
+
+Erhalten Sie detaillierte Informationen über ein bestimmtes Produkt.
+
+**Verfügbare Felder:**
+
+| Feld | Typ | Erforderlich | Beschreibung |
+|------|-----|--------------|--------------|
+| `productId` | string | Erforderlich | Shopify-Produkt-ID im Format "gid://shopify/Product/1234567890" |
+
+<Accordion title="Verwendungsbeispiel" defaultOpen>
+- *Benutzer:* "Zeigen Sie mir die Details des Produkts 1234567890"
+  - *Der Agent verwendet:* `getProduct` mit `productId: "gid://shopify/Product/1234567890"`
+</Accordion>
+
+---
+
+## Sammlungen
+
+### getCollections
+
+Erhalten Sie eine Liste von Sammlungen aus dem Shop.
+
+**Verfügbare Felder:**
+
+| Feld | Typ | Erforderlich | Beschreibung |
+|------|-----|--------------|--------------|
+| `collectionName` | string | Optional | Sammlungen nach Namen filtern |
+
+<Accordion title="Verwendungsbeispiele" defaultOpen>
+- *Benutzer:* "Welche Sammlungen haben Sie?"
+  - *Der Agent verwendet:* `getCollections` ohne Filter, um alle Sammlungen aufzulisten
+
+- *Benutzer:* "Zeigen Sie mir die Sommerkollektion"
+  - *Der Agent verwendet:* `getCollections` mit `collectionName: "Sommer"`
+</Accordion>
+
+### getCollection
+
+Erhalten Sie detaillierte Informationen über eine bestimmte Sammlung.
+
+**Verfügbare Felder:**
+
+| Feld | Typ | Erforderlich | Beschreibung |
+|------|-----|--------------|--------------|
+| `collectionId` | string | Erforderlich | Shopify-Sammlungs-ID im Format "gid://shopify/Collection/1234567890" |
+
+<Accordion title="Verwendungsbeispiel" defaultOpen>
+- *Benutzer:* "Zeigen Sie mir die Details der Sammlung 1234567890"
+  - *Der Agent verwendet:* `getCollection` mit `collectionId: "gid://shopify/Collection/1234567890"`
+</Accordion>
+
+---
+
+## Bestellungen
+
+### getTrackingInfo
+
+Erhalten Sie Tracking-/Statusinformationen für eine bestimmte Bestellung.
+
+**Verfügbare Felder:**
+
+| Feld | Typ | Erforderlich | Beschreibung |
+|------|-----|--------------|--------------|
+| `orderId` | string | Erforderlich | Bestell-ID (z.B. "#1001", "EN1001" oder "1001-A") |
+| `email` | string | Erforderlich | Kunden-E-Mail zur Bestellverifizierung |
+
+<Accordion title="Verwendungsbeispiel" defaultOpen>
+- *Benutzer:* "Wie ist der Status meiner Bestellung #1001?"
+  - *Der Agent verwendet:* `getTrackingInfo` mit `orderId: "#1001"` und `email: "kunde@beispiel.com"`
+</Accordion>
+
+<Tip>
+Der Agent kann verschiedene Bestell-ID-Formate verarbeiten. Er akzeptiert einfache Zahlen, Codes mit Präfixen wie "#" oder "EN" und Formate mit Suffixen wie "1001-A".
+</Tip>
+
+## Nächste Schritte
+
+<Card title="Verlassene Warenkörbe" icon="arrow-right" href="../messages/conf-shopify">
+  Erfahren Sie, wie Sie verlassene Warenkörbe in Ihrer Shopify-Integration konfigurieren und verwalten.
+</Card>
+

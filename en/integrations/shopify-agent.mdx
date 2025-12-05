@@ -1,0 +1,157 @@
+---
+title: 'Shopify Agent'
+description: 'Discover the Shopify Agent tools that allow your chatbot to search for products, check inventory, track orders, and access collections.'
+---
+
+## Shopify Agent Tools
+
+These tools work internally to provide your chatbot with complete Shopify store capabilities. Your agents can search for products, check inventory, track orders, and more.
+
+<Note>
+These tools operate automatically in the background. Users interact with your chatbot naturally, and the agent intelligently selects and uses these tools to provide accurate and up-to-date information about your store.
+</Note>
+
+<CardGroup cols={2}>
+  <Card
+    title="Products"
+    icon="box"
+    href="#productos"
+  >
+    Search and get detailed information about products from your store
+  </Card>
+  <Card
+    title="Product"
+    icon="box"
+    href="#getproduct"
+  >
+    Get detailed information about a specific product
+  </Card>
+  <Card
+    title="Collections"
+    icon="folder"
+    href="#colecciones"
+  >
+    Access collections and better organize your catalog
+  </Card>
+  <Card
+    title="Orders"
+    icon="truck"
+    href="#pedidos"
+  >
+    Track and query order status
+  </Card>
+</CardGroup>
+
+
+## Products 
+
+### getProducts
+
+Get a list of products from the store with optional filtering.
+
+**Available fields:**
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `productName` | string | Optional | Filter products by name |
+| `variantName` | string | Optional | Filter by variant name (color, size, etc.) |
+| `productType` | string | Optional | Filter by product type/category |
+| `productTag` | string | Optional | Filter by product tag |
+| `productVendor` | string | Optional | Filter by product vendor |
+| `minPrice` | number | Optional | Minimum price filter (default 0 if not provided) |
+| `maxPrice` | number | Optional | Maximum price filter (default 0 if not provided) |
+| `bringOnlyAvailable` | boolean | Optional | Filter to show only in-stock products (default false) |
+
+<Accordion title="Usage examples" defaultOpen>
+- *User:* "What t-shirts do you have available?"
+  - *The agent uses:* `getProducts` with `productName: "t-shirt"` and `bringOnlyAvailable: true`
+
+- *User:* "Show me shoe products between $50 and $100"
+  - *The agent uses:* `getProducts` with `productType: "shoes"`, `minPrice: 50`, `maxPrice: 100`
+
+- *User:* "Do you have blue shirts?"
+  - *The agent uses:* `getProducts` with `productName: "shirt"` and `variantName: "blue"`
+</Accordion>
+
+### getProduct
+
+Get detailed information about a specific product.
+
+**Available fields:**
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `productId` | string | Required | Shopify product ID in format "gid://shopify/Product/1234567890" |
+
+<Accordion title="Usage example" defaultOpen>
+- *User:* "Show me the details of product 1234567890"
+  - *The agent uses:* `getProduct` with `productId: "gid://shopify/Product/1234567890"`
+</Accordion>
+
+---
+
+## Collections
+
+### getCollections
+
+Get a list of collections from the store.
+
+**Available fields:**
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `collectionName` | string | Optional | Filter collections by name |
+
+<Accordion title="Usage examples" defaultOpen>
+- *User:* "What collections do you have?"
+  - *The agent uses:* `getCollections` without filters to list all collections
+
+- *User:* "Show me the summer collection"
+  - *The agent uses:* `getCollections` with `collectionName: "summer"`
+</Accordion>
+
+### getCollection
+
+Get detailed information about a specific collection.
+
+**Available fields:**
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `collectionId` | string | Required | Shopify collection ID in format "gid://shopify/Collection/1234567890" |
+
+<Accordion title="Usage example" defaultOpen>
+- *User:* "Show me the details of collection 1234567890"
+  - *The agent uses:* `getCollection` with `collectionId: "gid://shopify/Collection/1234567890"`
+</Accordion>
+
+---
+
+## Orders
+
+### getTrackingInfo
+
+Get tracking/status information for a specific order.
+
+**Available fields:**
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `orderId` | string | Required | Order ID (e.g., "#1001", "EN1001", or "1001-A") |
+| `email` | string | Required | Customer email for order verification |
+
+<Accordion title="Usage example" defaultOpen>
+- *User:* "What's the status of my order #1001?"
+  - *The agent uses:* `getTrackingInfo` with `orderId: "#1001"` and `email: "customer@example.com"`
+</Accordion>
+
+<Tip>
+The agent can handle different order ID formats. It accepts simple numbers, codes with prefixes like "#" or "EN", and formats with suffixes like "1001-A".
+</Tip>
+
+## Next Steps
+
+<Card title="Abandoned Carts" icon="arrow-right" href="../messages/conf-shopify">
+  Learn how to configure and manage abandoned carts in your Shopify integration.
+</Card>
+

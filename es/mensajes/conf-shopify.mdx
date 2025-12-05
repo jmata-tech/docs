@@ -1,0 +1,97 @@
+---
+title: 'Carritos Abandonados'
+description: 'Envía mensajes automáticos a clientes que abandonaron su carrito de compra para recuperar ventas perdidas y aumentar tus conversiones mediante recordatorios.'
+---
+
+## Configuración
+
+
+
+<Frame>
+    <img src = "/images/integrations/shopify/es/plantilla-wha.png" alt = "Integra tu cuenta de shopify"/>
+</Frame>
+
+<Warning>
+**Importante:** Es de suma importancia que agregues el botón con el formato de la URL en tu plantilla, además de tener un parametro dinamico en donde obtenga la URL del checkout.
+</Warning>
+
+## Configuración de Plantilla de WhatsApp
+
+Configura cómo se enviarán los mensajes de carritos abandonados a tus clientes mediante WhatsApp. Dentro de esta sección, podrás seleccionar la plantilla de WhatsApp Business que hayas creado previamente para personalizar tus mensajes de recuperación de carrito.
+
+<Frame>
+    <img src = "/images/integrations/shopify/plantillas.png" alt = "Integra tu cuenta de shopify"/>
+</Frame>
+
+### Días después del checkout
+
+Selecciona cuántos días después de que el usuario abandone su carrito se debe enviar el mensaje. Esto te permite elegir el momento óptimo para contactar a tus clientes sin ser demasiado intrusivo.
+
+**Ejemplo:** Si configuras 1 día, los clientes recibirán el mensaje 24 horas después de abandonar su carrito.
+
+<Frame>
+    <img src = "/images/integrations/shopify/es/days-after.png" alt = "Integra tu cuenta de shopify"/>
+</Frame>
+
+### Hora de envío
+
+Selecciona la hora del día en que se deben enviar los mensajes de checkout abandonado. Los mensajes se enviarán minutos después de esta hora, no exactamente a la hora programada.
+
+<Frame>
+    <img src = "/images/integrations/shopify/es/envio.png" alt = "Integra tu cuenta de shopify"/>
+</Frame>
+
+<Tip>
+Elije una hora en la que tus clientes suelan estar activos en WhatsApp para aumentar las probabilidades de respuesta.
+</Tip>
+
+### Zona horaria
+
+Configura la zona horaria para la hora de envío anterior. Asegúrate de seleccionar la zona horaria de tu región o la de la mayoría de tus clientes para que los mensajes lleguen en el momento adecuado.
+
+<Frame>
+    <img src = "/images/integrations/shopify/es/timezone.png" alt = "Integra tu cuenta de shopify"/>
+</Frame>
+
+### Parámetros de plantilla
+
+Configura los parámetros para tu plantilla, cada una de ellas tiene **diferente número de parámetros** a utilizar. Estos parámetros personalizan el mensaje para cada cliente.
+
+#### Parametro 1
+- **Uso:** Nombre del cliente que recibirá el mensaje
+
+**Valor del parámetro:**
+
+Puedes configurar el valor como:
+
+- **Texto estático:** Valor fijo para todos los destinatarios (ej., "Estimado cliente")
+- **Texto Dinámico:** El valor se genera automáticamente usando los datos del contacto (ej., Hola, `{{nombre}}`! -> Hola, **Juan**! )
+
+<Frame>
+    <img src = "/images/integrations/shopify/es/param1.png" alt = "Integra tu cuenta de shopify"/>
+</Frame>
+
+#### Parámetro 2
+
+- **Uso:** Configuración del botón de acción en el mensaje
+
+**Valor del parámetro:**
+
+Al igual que el nombre, puedes usar:
+
+- **Texto estático:** Un valor fijo para todos los botones
+- **Texto Dinámico:** Información dinámica según el contexto del checkout abandonado
+
+<Frame>
+    <img src = "/images/integrations/shopify/es/param2.png" alt = "Integra tu cuenta de shopify"/>
+</Frame>
+
+<Warning>
+**Importante**: Para el parametro dinamico mencionado anteriormente, asegúrate de usar como valor la opcion de URL de checkout. Esta ruta dinámica permite que cada cliente sea dirigido exactamente a su carrito abandonado, facilitando que puedan completar su compra.
+</Warning>
+
+### Información de parámetros
+Los parámetros se mapean automáticamente desde la plantilla de WhatsApp Business configurada. Ten en cuenta:
+
+- **Texto estático:** El mismo valor se usa para todos los destinatarios. Útil para mensajes generales.
+- **Texto Dinámico:** El valor se genera dinámicamente desde los datos de contacto disponibles. Ideal para personalización.

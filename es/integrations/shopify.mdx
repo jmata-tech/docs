@@ -1,20 +1,119 @@
 ---
-title: 'Shopify'
-description: 'Como integrar tu chatbot en Shopify para una experiencia de usuario fluida.'
-icon: 'shopify'
+title: 'Conectar Shopify'
+description: 'Conecta tu tienda Shopify con Doko y permite que tu chatbot busque productos, gestione colecciones y responda consultas de clientes automáticamente.'
 ---
-## Integración en tu tienda Shopify
 
-[Crea tu chatbot aquí](https://doko-ai.com/es/sign-up)
 
-### Sigue este tutorial interactivo para integrar tu chatbot en Shopify
+## ¿Cómo conectar shopify con tu cuenta de Doko?
+
+Sigue los pasos a continuación para vincular tu tienda Shopify con tu chatbot. El proceso es rápido y solo requiere autorizar el acceso desde tu cuenta de Shopify.
+
+**Ubicación:** Dashboard → Configuración → Integraciones → Shopify
+
+<Steps>
+    <Step title="Conectar tu chatbot con shopify">
+    <p>
+        En la lista de integraciones disponibles, busca la opción de <strong>Shopify</strong> y haz clic en el botón <strong>Conectar</strong>. 
+        Este botón iniciará el proceso de vinculación entre tu cuenta de Doko y tu tienda Shopify, redirigiendo a la página de autenticación de Shopify.
+    </p>
+    <Frame>
+        <img src = "/images/integrations/shopify/es/shopify.png" alt = "Integra tu cuenta de shopify"/>
+    </Frame>
+    </Step>
+
+    <Step title="Iniciar sesion con Shopify">
+        <p>
+            Registrate o inicia sesión con tu cuenta de Shopify para autorizar que Doko pueda acceder a los datos de tu tienda.
+        </p>
+        <Frame>
+            <img src = "/images/integrations/shopify/login.png" alt = "Integra tu cuenta de shopify"/>
+        </Frame>
+    </Step>
+
+    <Step title="Integracion lista">
+        <p>
+            Una vez autorizado, serás redirigido a Doko y verás la confirmación de que la integración está completa y ya podrás comenzar a configurarla.
+        </p>
+        <Frame>
+            <img src = "/images/integrations/shopify/es/integracion.png" alt = "Integra tu cuenta de shopify"/>
+        </Frame>
+    </Step>
+</Steps>
+
+## Gestionar la base de conocimientos de Shopify
+
+- ### Prompt de la tienda
+Este prompt proporciona contexto específico de la tienda (productos, colecciones, políticas, tono) para que el chatbot pueda responder con precisión y mantener la identidad de la marca.
+
+- ### Sincronización de productos
+Permite que tu chatbot conozca los productos de tu tienda para que cuando el usuario pregunte por tus productos pueda responder de forma directa y automática.
+
+- ### Buscar colecciones
+Las colecciones ordenan tus productos y facilitan que los clientes encuentren rápido lo que buscan, mejorando la navegación, la experiencia de compra y tus conversiones.
+
+<Frame>
+    <img src = "/images/integrations/shopify/es/base-conocimientos.png" alt = "Integra tu cuenta de shopify"/>
+</Frame>
+
+## Diferencia real entre un buen y mal inventario
+
+<CardGroup cols={1}>
+  <Card title="Mal inventario" icon="triangle-exclamation">
+    - Productos incompletos o con información confusa
+    - Variantes mezcladas o mal configuradas
+    - Existencias incorrectas (productos que "hay", pero no hay)
+    - Navegación desordenada, difícil de explorar
+  </Card>
+  <Card title="Buen inventario" icon="check-circle">
+    - Productos completos: fotos claras, descripciones precisas, precios correctos
+    - Variantes bien organizadas (tallas, colores, modelos)
+    - Stock actualizado y sin artículos agotados visibles sin motivo
+    - Fácil de encontrar gracias a colecciones y etiquetas bien usadas
+  </Card>
+</CardGroup>
+
+## Como poner la burbuja del chat en tu tienda de shopify
+Sigue este tutorial interactivo para integrar tu chatbot en tu propia tienda de Shopify para una experiencia de usuario fluida.
 <iframe
-        width="560"
+  width="560"
   height="315"
- src="https://demo.arcade.software/Xp2P6oBV6d0dplANSnP1?embed&embed_mobile=inline&embed_desktop=inline&show_copy_link=true"
+  src="https://demo.arcade.software/Xp2P6oBV6d0dplANSnP1?embed&embed_mobile=inline&embed_desktop=inline&show_copy_link=true"
   title="YouTube video player"
   frameborder="0"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowfullscreen
       >
-      </iframe>
+</iframe>
+
+## Cómo desinstalar la integración con Shopify
+
+Si necesitas desinstalar la integración de Shopify, puedes hacerlo desde dos lugares:
+
+### Desde Doko
+
+1. Ve a **Dashboard → Configuración → Integraciones**
+2. Busca la integración de **Shopify** en la lista
+3. Haz clic en el botón **Desconectar** o **Desinstalar**
+4. Confirma la acción para completar la desinstalación
+
+Al desinstalar desde Doko, se eliminará la conexión entre tu cuenta y Shopify, pero la aplicación seguirá instalada en tu tienda de Shopify.
+
+### Desde Shopify
+
+1. Inicia sesión en tu panel de administración de Shopify
+2. Ve a **Configuración → Apps y canales de venta**
+3. Busca la aplicación **Doko** en la lista de aplicaciones instaladas
+4. Haz clic en **Desinstalar** o **Eliminar aplicación**
+5. Confirma la desinstalación
+
+Al desinstalar desde Shopify, se revocará el acceso de Doko a tu tienda y la integración quedará completamente desconectada.
+
+<Frame>
+    <img src = "/images/integrations/shopify/es/desinstalar.png" alt = "Desinstalar integración de Shopify"/>
+</Frame>
+
+## Siguientes Pasos
+
+<Card title="Herramientas del Agente de Shopify" icon="arrow-right" href="./shopify-agent">
+  Conoce a fondo cómo funciona tu chatbot
+</Card>

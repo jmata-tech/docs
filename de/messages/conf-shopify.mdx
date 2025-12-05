@@ -1,0 +1,98 @@
+---
+title: 'Verlassene Warenkörbe'
+description: 'Senden Sie automatische Nachrichten an Kunden, die ihren Warenkorb verlassen haben, um verlorene Verkäufe zurückzugewinnen und Ihre Konversionen durch Erinnerungen zu steigern.'
+---
+
+## Konfiguration
+
+
+
+<Frame>
+    <img src = "/images/integrations/shopify/de/plantilla-wha.png" alt = "Integrieren Sie Ihr Shopify-Konto"/>
+</Frame>
+
+<Warning>
+**Wichtig:** Es ist von größter Bedeutung, dass Sie die Schaltfläche mit dem URL-Format in Ihrer Vorlage hinzufügen, zusätzlich zu einem dynamischen Parameter, wo die Checkout-URL abgerufen wird.
+</Warning>
+
+## WhatsApp-Vorlagenkonfiguration
+
+Konfigurieren Sie, wie Nachrichten zu verlassenen Warenkörben an Ihre Kunden über WhatsApp gesendet werden. In diesem Abschnitt können Sie die WhatsApp Business-Vorlage auswählen, die Sie zuvor erstellt haben, um Ihre Warenkorb-Wiederherstellungsnachrichten anzupassen.
+
+<Frame>
+    <img src = "/images/integrations/shopify/plantillas.png" alt = "Integrieren Sie Ihr Shopify-Konto"/>
+</Frame>
+
+### Tage nach dem Checkout
+
+Wählen Sie aus, wie viele Tage nach dem Verlassen des Warenkorbs durch den Benutzer die Nachricht gesendet werden soll. Dies ermöglicht es Ihnen, den optimalen Zeitpunkt zu wählen, um Ihre Kunden zu kontaktieren, ohne zu aufdringlich zu sein.
+
+**Beispiel:** Wenn Sie 1 Tag konfigurieren, erhalten Kunden die Nachricht 24 Stunden nach dem Verlassen ihres Warenkorbs.
+
+<Frame>
+    <img src = "/images/integrations/shopify/de/days-after.png" alt = "Integrieren Sie Ihr Shopify-Konto"/>
+</Frame>
+
+### Versandzeit
+
+Wählen Sie die Tageszeit aus, zu der Nachrichten zu verlassenen Checkouts gesendet werden sollen. Die Nachrichten werden Minuten nach dieser Zeit gesendet, nicht genau zur geplanten Zeit.
+
+<Frame>
+    <img src = "/images/integrations/shopify/de/envio.png" alt = "Integrieren Sie Ihr Shopify-Konto"/>
+</Frame>
+
+<Tip>
+Wählen Sie eine Zeit, zu der Ihre Kunden normalerweise auf WhatsApp aktiv sind, um die Antwortwahrscheinlichkeit zu erhöhen.
+</Tip>
+
+### Zeitzone
+
+Konfigurieren Sie die Zeitzone für die vorherige Versandzeit. Stellen Sie sicher, dass Sie die Zeitzone Ihrer Region oder die der meisten Ihrer Kunden auswählen, damit die Nachrichten zur richtigen Zeit ankommen.
+
+<Frame>
+    <img src = "/images/integrations/shopify/de/timezone.png" alt = "Integrieren Sie Ihr Shopify-Konto"/>
+</Frame>
+
+### Vorlagenparameter
+
+Konfigurieren Sie die Parameter für Ihre Vorlage, jede hat eine **unterschiedliche Anzahl von Parametern** zu verwenden. Diese Parameter passen die Nachricht für jeden Kunden an.
+
+#### Parameter 1
+- **Verwendung:** Name des Kunden, der die Nachricht erhalten wird
+
+**Parameterwert:**
+
+Sie können den Wert konfigurieren als:
+
+- **Statischer Text:** Fester Wert für alle Empfänger (z.B. "Lieber Kunde")
+- **Dynamischer Text:** Der Wert wird automatisch unter Verwendung der Kontaktdaten generiert (z.B. Hallo, `{{name}}`! -> Hallo, **Hans**! )
+
+<Frame>
+    <img src = "/images/integrations/shopify/de/param1.png" alt = "Integrieren Sie Ihr Shopify-Konto"/>
+</Frame>
+
+#### Parameter 2
+
+- **Verwendung:** Konfiguration der Aktionsschaltfläche in der Nachricht
+
+**Parameterwert:**
+
+Genau wie der Name können Sie verwenden:
+
+- **Statischer Text:** Ein fester Wert für alle Schaltflächen
+- **Dynamischer Text:** Dynamische Informationen entsprechend dem Kontext des verlassenen Checkouts
+
+<Frame>
+    <img src = "/images/integrations/shopify/de/param2.png" alt = "Integrieren Sie Ihr Shopify-Konto"/>
+</Frame>
+
+<Warning>
+**Wichtig**: Für den oben erwähnten dynamischen Parameter stellen Sie sicher, dass Sie die Checkout-URL-Option als Wert verwenden. Diese dynamische Route ermöglicht es, dass jeder Kunde genau zu seinem verlassenen Warenkorb geleitet wird, was es ihnen erleichtert, ihren Kauf abzuschließen.
+</Warning>
+
+### Parameterinformationen
+Parameter werden automatisch aus der konfigurierten WhatsApp Business-Vorlage zugeordnet. Beachten Sie:
+
+- **Statischer Text:** Derselbe Wert wird für alle Empfänger verwendet. Nützlich für allgemeine Nachrichten.
+- **Dynamischer Text:** Der Wert wird dynamisch aus verfügbaren Kontaktdaten generiert. Ideal für Personalisierung.
+

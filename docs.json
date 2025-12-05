@@ -40,16 +40,25 @@
                 "pages": [
                   "en/messages/contacts",
                   "en/messages/lists",
-                  "en/messages/campaigns"
+                  "en/messages/campaigns",
+                  "en/messages/creditos"
                 ]
               },
               {
                 "group": "Integrations",
                 "pages": [
+                  {
+                    "group": "Shopify",
+                    "icon": "shopify",
+                    "pages": [
+                       "en/integrations/shopify",
+                       "en/integrations/shopify-agent",
+                       "en/messages/conf-shopify"
+                    ]
+                  },
                   "en/integrations/whatsapp",
                   "en/integrations/instagram",
                   "en/integrations/messenger",
-                  "en/integrations/shopify",
                   "en/integrations/hubspot",
                   "en/integrations/google-calendar",
                   "en/integrations/zendesk"
@@ -85,7 +94,7 @@
         "default": true,
         "anchors": [
           {
-            "anchor": "Documentation",
+            "anchor": "Documentación",
             "icon": "book-open",
             "groups": [
               {
@@ -110,16 +119,26 @@
                 "pages": [
                   "es/mensajes/contactos",
                   "es/mensajes/listas",
-                  "es/mensajes/campaigns"
+                  "es/mensajes/campaigns",
+                  "es/mensajes/creditos"
                 ]
               },
               {
                 "group": "Integraciones",
                 "pages": [
+                  {
+                    "group": "Shopify",
+                    "icon": "shopify",
+                    "pages": [
+                       "es/integrations/shopify",
+                       "es/integrations/shopify-agent",
+                       "es/mensajes/conf-shopify"
+
+                    ]
+                  },
                   "es/integrations/whatsapp",
                   "es/integrations/instagram",
                   "es/integrations/messenger",
-                  "es/integrations/shopify",                  
                   "es/integrations/hubspot",
                   "es/integrations/google-calendar",
                   "es/integrations/zendesk"
@@ -179,17 +198,26 @@
                 "pages":[
                   "de/messages/contacts",
                   "de/messages/lists",
-                  "de/messages/campaigns"
+                  "de/messages/campaigns",
+                  "de/messages/creditos"
                 ]
               },
               
               {
                 "group": "Integrationen",
                 "pages": [
+                  {
+                    "group": "Shopify",
+                    "icon": "shopify",
+                    "pages": [
+                       "de/integrations/shopify",
+                       "de/integrations/shopify-agent",
+                       "de/messages/conf-shopify"
+                    ]
+                  },
                   "de/integrations/whatsapp",
                   "de/integrations/instagram",
                   "de/integrations/messenger",
-                  "de/integrations/shopify",
                   "de/integrations/hubspot",
                   "de/integrations/google-calendar",
                   "de/integrations/zendesk"
@@ -220,16 +248,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentación",
-          "href": "https://docs.doko-ai.com/introduction",
-          "icon": "book-open-cover"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/icono-nuevo-1.png",

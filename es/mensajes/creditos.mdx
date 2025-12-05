@@ -1,0 +1,178 @@
+---
+title: '¿Cómo funcionan los creditos?'
+description: 'Aprende cómo funcionan los créditos de tu chatbot, cuándo se consumen y cómo gestionar su uso eficientemente para optimizar tus interacciones con los clientes.'
+icon: 'coins'
+---
+
+## ¿Qué son los créditos?
+
+Los créditos son la unidad de consumo que utiliza tu chatbot para procesar y responder mensajes. Cada interacción con tu chatbot consume créditos según la complejidad de la consulta y la cantidad de información procesada.
+
+<Tip>
+Cada vez que un usuario le pregunta algo al chatbot, se consume **1 crédito**. Puedes monitorear tu consumo de créditos desde el dashboard para mantener un control sobre tu uso.
+</Tip>
+
+## ¿Cuándo se consumen los créditos?
+
+Los créditos se consumen automáticamente en las siguientes situaciones:
+
+<CardGroup cols={2}>
+  <Card title="Respuestas de chatbot" icon="message">
+    Cada vez que tu chatbot responde a un mensaje de un usuario, se consume 1 crédito.
+  </Card>
+  <Card title="Campañas de mensajería" icon="paper-plane">
+    Por cada mensaje enviado a un usuario en una campaña de marketing o por cada mensaje de carritos abandonados
+  </Card>
+</CardGroup>
+
+## Ejemplos de uso de créditos
+
+A continuación, te mostramos ejemplos de conversaciones reales para entender cómo se consumen los créditos:
+
+<Card title="Conversación 1: Consulta simple (2 créditos)" icon="comments">
+
+**Usuario:** ¿Tienen zapatos deportivos?  
+**Chatbot:** ¡Hola! Sí, tenemos una amplia variedad de zapatos deportivos. ¿Qué tipo de actividad vas a realizar?  
+**💳 Se consumió 1 crédito**
+
+---
+
+**Usuario:** Para correr  
+**Chatbot:** Perfecto, tenemos modelos especializados para running. ¿Qué talla necesitas?  
+**💳 Se consumió 1 crédito**
+
+---
+
+**📊 Total: 2 créditos consumidos**
+
+</Card>
+
+<Card title="Conversación 2: Consulta de producto (3 créditos)" icon="comments">
+
+**Usuario:** Hola, ¿tienen camisetas disponibles?  
+**Chatbot:** ¡Hola! Sí, tenemos varias camisetas disponibles. ¿Qué tipo de camiseta estás buscando?  
+**💳 Se consumió 1 crédito**
+
+---
+
+**Usuario:** Quiero una camiseta negra talla M  
+**Chatbot:** Perfecto, tenemos camisetas negras en talla M. El precio es 25 dólares. ¿Te gustaría ver más detalles?  
+**💳 Se consumió 1 crédito**
+
+---
+
+**Usuario:** ¿Cuánto cuesta el envío?  
+**Chatbot:** El envío estándar tiene un costo de 5 dólares y tarda entre 3-5 días hábiles. También ofrecemos envío express por 10 dólares con entrega en 24 horas.  
+**💳 Se consumió 1 crédito**
+
+---
+
+**📊 Total: 3 créditos consumidos**
+
+</Card>
+
+<Card title="Conversación 3: Consulta completa (5 créditos)" icon="comments">
+
+**Usuario:** Buenas tardes, quiero información sobre laptops  
+**Chatbot:** ¡Buenas tardes! Claro, tenemos varias opciones de laptops. ¿Para qué uso la necesitas?  
+**💳 Se consumió 1 crédito**
+
+---
+
+**Usuario:** Para trabajo y diseño gráfico  
+**Chatbot:** Perfecto, te recomiendo nuestras laptops con procesador Intel i7 y tarjeta gráfica dedicada. ¿Cuál es tu presupuesto?  
+**💳 Se consumió 1 crédito**
+
+---
+
+**Usuario:** Entre 800 y 1200 dólares  
+**Chatbot:** Tenemos 3 modelos en ese rango. ¿Te gustaría que te envíe las especificaciones de cada uno?  
+**💳 Se consumió 1 crédito**
+
+---
+
+**Usuario:** Sí, por favor  
+**Chatbot:** Aquí tienes las opciones: Modelo A - 899 dólares, Modelo B - 1099 dólares, Modelo C - 1199 dólares. ¿Cuál te interesa más?  
+**💳 Se consumió 1 crédito**
+
+---
+
+**Usuario:** ¿El modelo B tiene garantía?  
+**Chatbot:** Sí, todos nuestros productos incluyen garantía de 1 año. ¿Te gustaría proceder con la compra del Modelo B?  
+**💳 Se consumió 1 crédito**
+
+---
+
+**📊 Total: 5 créditos consumidos**
+
+</Card>
+
+Como puedes ver, cada pregunta o mensaje del usuario genera una respuesta del chatbot y consume **1 crédito** por interacción. El número total de créditos depende de la cantidad de preguntas que haga el usuario.
+
+
+## Créditos para campañas
+
+En las campañas de mensajería, **por cada persona a la que se le envíe un mensaje, se consume 1 crédito**. Esto significa que si envías una campaña a 100 contactos, se consumirán 100 créditos.
+
+Lo mismo aplica para los **[carritos abandonados](./conf-shopify)**: por cada mensaje enviado a un cliente sobre su carrito abandonado, se consume **1 crédito**.
+
+<Frame>
+    <img src = "/images/mensajes/es/creditos-campaign.png" alt = "Créditos para campañas"/>
+</Frame>
+
+## Uso de créditos de chatbot
+
+**Ubicación**: Dashboard → Configuración → Uso
+
+<Card title="Panel de uso de créditos" icon="chart-line">
+En el panel de uso puedes visualizar la información relevante sobre tu consumo de créditos:
+
+- **Período de facturación**: Muestra las fechas de inicio y final de tu período actual. Esto te ayuda a saber cuándo se renuevan tus créditos y cuánto tiempo te queda en tu plan actual.
+
+- **Consumo del plan**: Indica cuántos créditos has utilizado y cuántos créditos te quedan disponibles en tu plan actual.
+
+- **Preguntas extras utilizadas**: Muestra la cantidad de preguntas que se han procesado después de agotar los créditos de tu plan. Estas preguntas extras generan cobros adicionales, por lo que es importante monitorear este número para mantener el control de tus gastos.
+
+<Frame>
+    <img src = "/images/mensajes/es/uso.png" alt = "Uso de creditos"/>
+</Frame>
+</Card>
+
+<Card title="Control de créditos con el switch" icon="toggle-on">
+El **switch de control de créditos** es una herramienta de seguridad que te permite prevenir que el chatbot responda cuando ya no tengas créditos disponibles. 
+
+Cuando activas este switch y tu cuenta se queda sin créditos, el chatbot **dejará de responder automáticamente** a las consultas de los usuarios. Esto evita que se consuman créditos adicionales y, por consecuencia, **previene cobros por preguntas extra** que podrían generarse si el chatbot siguiera funcionando sin créditos.
+
+**¿Cómo funciona?**
+- **Switch activado**: El chatbot se desactiva automáticamente cuando se agotan los créditos, protegiendo tu cuenta de consumos inesperados.
+- **Switch desactivado**: El chatbot puede continuar respondiendo incluso sin créditos, lo que generará cobros adicionales.
+
+<Frame>
+    <img src = "/images/mensajes/es/switch.png" alt = "Switch"/>
+</Frame>
+</Card>
+
+## Planes de Doko para créditos de chatbot
+
+Doko ofrece diferentes planes de créditos adaptados a las necesidades de tu negocio. Elige el plan que mejor se ajuste al volumen de interacciones que esperas tener con tus clientes.
+
+| Plan | Créditos incluidos | Ideal para |
+|------|-------------------|------------|
+| **Básico** | `1,000 créditos` | Pequeñas tiendas o negocios que están comenzando |
+| **Emprendedor** | `5,000 créditos` | Negocios en crecimiento con tráfico moderado |
+| **Profesional** | `12,000 créditos` | Empresas establecidas con alto volumen de consultas |
+| **Empresarial** | `65,000 créditos` | Grandes empresas con múltiples canales y alto tráfico |
+
+<Card title="Ver planes y precios completos" icon="arrow-right" href="https://doko-ai.com/es/precios">
+  Descubre todos los detalles de nuestros planes, precios y características. Encuentra el plan perfecto para tu negocio y comienza a optimizar tus interacciones con los clientes.
+</Card>
+
+## Precios de WhatsApp Business
+
+Es importante entender cómo funciona el sistema de cobro de WhatsApp Business para gestionar eficientemente tus costos de mensajería.
+
+<Card title="Ver precios oficiales de WhatsApp Business" icon="external-link" href="https://business.whatsapp.com/products/platform-pricing?lang=es_LA&country=M%C3%A9xico&currency=D%C3%B3lar%20(USD)&category=Utilidad">
+  Accede a la calculadora de precios oficial de WhatsApp Business para conocer las tarifas exactas según tu país, categoría de mensaje y volumen de envíos.
+</Card>
+
+
