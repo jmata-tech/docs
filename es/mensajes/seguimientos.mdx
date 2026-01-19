@@ -1,0 +1,331 @@
+---
+title: 'Seguimientos'
+description: 'Envía mensajes automáticos de seguimiento cuando tus clientes no responden'
+icon: 'clock'
+---
+
+## ¿Qué son los mensajes de seguimiento?
+
+Los mensajes de seguimiento son mensajes automáticos que se envían a tus clientes según la situación en la que se encuentren. Pueden servir como recordatorios, para retomar una conversación con un cliente interesado o para impulsar una acción pendiente.
+
+Otras ventajas de los seguimientos son:
+
+- **Recuperar conversaciones**: Re-engancha a clientes que dejaron de responder
+- **Automatizar el seguimiento**: No pierdas oportunidades por olvidar hacer seguimiento manual
+- **Mejorar la experiencia**: Mantén la comunicación fluida y proactiva con tus clientes
+- **Aumentar conversiones**: Mejora tus tasas de respuesta y cierre de ventas
+
+<Tip>Los seguimientos son esenciales para maximizar el valor de cada conversación y no perder oportunidades de negocio</Tip>
+
+<Warning>
+Los tiempos de retraso tienen limitaciones según la plataforma:
+- **Instagram y Messenger**: Máximo 12 horas después de la última interacción (política de API de Meta)
+- **WhatsApp**: Puede usar más tiempo si usas plantillas preaprobadas por Meta
+</Warning>
+
+## Requisitos previos
+
+Antes de crear tu primer seguimiento, asegúrate de tener:
+
+1. **Integración activa**: Al menos una integración de mensajería activa (WhatsApp, Instagram o Messenger)
+2. **Conversaciones existentes**: Los seguimientos se aplican a conversaciones activas con tus clientes
+3. **Plantillas de WhatsApp** (opcional): Si usas WhatsApp y quieres enviar después de 12 horas, necesitas plantillas preaprobadas
+
+<Warning>Sin una integración activa, los seguimientos no se enviarán</Warning>
+
+## Vista principal de seguimientos
+
+La vista principal te permite gestionar todos tus mensajes de seguimiento desde un solo lugar. Aquí encontrarás todas las herramientas necesarias para administrar tus automatizaciones.
+
+<Frame>
+  <img src="/images/mensajes/es/seguimientos/seguimientos.png" alt="Vista principal de seguimientos" />
+</Frame>
+
+## Crear un mensaje de seguimiento
+
+Para crear un nuevo seguimiento, haz clic en el botón **"Crear Seguimiento"** ubicado en la parte superior derecha de la página principal.
+
+<Frame>
+  <img src="/images/mensajes/es/seguimientos/boton.png" alt="Botón crear seguimiento" />
+</Frame>
+
+El formulario de creación te guiará paso a paso para configurar tu automatización:
+
+<Steps>
+    <Step>
+        <h3>1. Nombre para Mostrar</h3>
+        <p>Ingresa un nombre amigable y descriptivo que te ayude a identificar este seguimiento fácilmente en tu lista.</p>
+        <Frame>
+          <img src="/images/mensajes/es/seguimientos/nombre.png" alt="Nombre para mostrar" />
+        </Frame>
+        <p><strong>Requisitos:</strong></p>
+        <ul>
+          <li>Máximo 100 caracteres</li>
+          <li>Nombre descriptivo del propósito del seguimiento</li>
+        </ul>
+        <p><strong>Ejemplos:</strong></p>
+        <ul>
+          <li>"Seguimiento de consulta - 24 horas"</li>
+          <li>"Recordatorio de producto abandonado"</li>
+        </ul>
+        <Tip>Usa nombres claros y descriptivos para identificar rápidamente el propósito de cada seguimiento</Tip>
+    </Step>
+
+    <Step>
+        <h3>2. Color de Etiqueta (Opcional)</h3>
+        <p>Elige un color para etiquetar este seguimiento y mejorar la organización visual de tu lista.</p>
+        <Frame>
+          <img src="/images/mensajes/es/seguimientos/label.png" alt="Color de etiqueta" />
+        </Frame>
+        <p>Los colores de etiqueta te permiten:</p>
+        <ul>
+          <li>Organizar visualmente tus seguimientos</li>
+          <li>Agrupar seguimientos por tipo o propósito</li>
+          <li>Identificar rápidamente diferentes categorías</li>
+        </ul>
+    </Step>
+
+    <Step>
+        <h3>3. Retraso Después de Última Interacción</h3>
+        <p>Configura cuándo se enviará el seguimiento después de que el cliente dejó de responder.</p>
+        <Frame>
+          <img src="/images/mensajes/es/seguimientos/delay.png" alt="Configurar retraso" />
+        </Frame>
+        <p><strong>Opciones disponibles:</strong></p>
+        <ul>
+          <li><strong>Dejar que la IA decida</strong>: La inteligencia artificial determinará el mejor momento para enviar el seguimiento basándose en el contexto de la conversación</li>
+          <li><strong>Configuración manual</strong>: Define un tiempo específico (horas o minutos) después de la última interacción</li>
+        </ul>
+        <h4>Limitaciones por plataforma:</h4>
+        <ul>
+          <li><strong>Instagram y Messenger</strong>: Máximo 12 horas después de la última interacción (política de API de Meta)</li>
+          <li><strong>WhatsApp</strong>: Puedes usar más tiempo si usas plantillas preaprobadas por Meta. Sin plantillas, también está limitado a 12 horas</li>
+        </ul>
+        <Warning>
+          Si configuras un retraso mayor a 12 horas para Instagram o Messenger, el sistema automáticamente ajustará el tiempo al máximo permitido.
+        </Warning>
+        <Tip>Dejar que la IA decida es recomendable cuando no estés seguro del mejor momento, ya que optimiza según el contexto y tipo de conversación</Tip>
+    </Step>
+
+    <Step>
+        <h3>4. Descripción *</h3>
+        <p>Esta descripción es crucial: le dice a la IA cuándo y por qué activar este seguimiento. Debe ser clara y específica sobre las condiciones.</p>
+        <Frame>
+          <img src="/images/mensajes/es/seguimientos/description.png" alt="Descripción del seguimiento" />
+        </Frame>
+        <p><strong>Ejemplos de buenas descripciones:</strong></p>
+        <ul>
+          <li>"Enviar seguimiento cuando un cliente pregunta por un producto pero no responde en 6 horas"</li>
+          <li>"Recordatorio para clientes que solicitaron información sobre servicios pero dejaron la conversación sin cerrar"</li>
+          <li>"Seguimiento de venta cuando el cliente muestra interés pero no completa la compra"</li>
+        </ul>
+        <p><strong>Qué incluir en la descripción:</strong></p>
+        <ul>
+          <li>Contexto de la conversación (qué tipo de consulta o situación)</li>
+          <li>Condición de activación (cuándo debe enviarse)</li>
+          <li>Propósito del mensaje (qué se busca lograr)</li>
+        </ul>
+        <Warning>Una descripción clara y detallada es esencial para que la IA active el seguimiento en el momento correcto</Warning>
+    </Step>
+
+    <Step>
+        <h3>6. Mensaje (Opcional)</h3>
+        <p>Define el contenido del mensaje que se enviará como parte de este seguimiento.</p>
+        <Frame>
+          <img src="/images/mensajes/es/seguimientos/message.png" alt="Mensaje del seguimiento" />
+        </Frame>
+        <p><strong>Opciones disponibles:</strong></p>
+        <ul>
+          <li><strong>Dejar que la IA genere</strong>: La inteligencia artificial creará el mensaje automáticamente basándose en la descripción y el contexto de la conversación</li>
+          <li><strong>Escribir mensaje personalizado</strong>: Define exactamente qué mensaje quieres enviar</li>
+        </ul>
+        <h4>Ventajas de cada opción:</h4>
+        <p><strong>IA genera el mensaje:</strong></p>
+        <ul>
+          <li>Mensajes contextualmente relevantes</li>
+          <li>Adaptación automática al tono y estilo de la conversación</li>
+          <li>Ahorro de tiempo en la configuración</li>
+          <li>Personalización según el contexto de cada cliente</li>
+        </ul>
+        <p><strong>Mensaje personalizado:</strong></p>
+        <ul>
+          <li>Control total sobre el contenido</li>
+          <li>Consistencia en el mensaje para todos los clientes</li>
+          <li>Ideal para mensajes específicos o con información corporativa</li>
+        </ul>
+        <Tip>Dejar que la IA genere el mensaje es recomendable para obtener mensajes más naturales y adaptados a cada situación específica</Tip>
+    </Step>
+
+    <Step>
+        <h3>7. Plantilla de WhatsApp (Opcional)</h3>
+        <p>Si usas WhatsApp y necesitas enviar seguimientos después de 12 horas, puedes usar una plantilla preaprobada por Meta.</p>
+        <Frame>
+          <img src="/images/mensajes/es/seguimientos/template.png" alt="Plantilla de WhatsApp" />
+        </Frame>
+        <p><strong>Cuándo usar plantillas:</strong></p>
+        <ul>
+          <li>Cuando necesitas enviar seguimientos después de 12 horas en WhatsApp</li>
+          <li>Para mensajes promocionales o de marketing</li>
+          <li>Para mantener consistencia con tus plantillas aprobadas</li>
+        </ul>
+        <p><strong>Importante sobre costos:</strong></p>
+        <Warning>
+          El uso de plantillas de WhatsApp genera un cargo separado de WhatsApp. Verifica los precios de la API de WhatsApp antes de usar esta opción.
+        </Warning>
+        <p>Puedes seleccionar una plantilla previamente creada y aprobada desde tu lista de plantillas disponibles. O también puedes [crear una plantilla desde Doko](./plantillas) y utilizarla aquí.</p>
+        <Tip>Las plantillas de WhatsApp son útiles cuando necesitas enviar mensajes fuera de la ventana de 12 horas o para mensajes que requieren aprobación previa de Meta</Tip>
+    </Step>
+
+    <Step>
+        <h3>8. Revisar y crear</h3>
+        <p>Revisa toda la configuración antes de crear el seguimiento. Una vez creado, estará activo y comenzará a funcionar automáticamente.</p>
+        <Frame>
+          <img src="/images/mensajes/es/seguimientos/send.png" alt="Revisar seguimiento" />
+        </Frame>
+        <p>Antes de confirmar, verifica:</p>
+        <ul>
+          <li>Nombre descriptivo y claro</li>
+          <li>Tiempo de retraso apropiado para tu plataforma</li>
+          <li>Descripción que explique claramente cuándo activarse</li>
+          <li>Disparador de detención bien definido</li>
+          <li>Configuración de mensaje (IA o personalizado)</li>
+          <li>Plantilla de WhatsApp si es necesaria</li>
+        </ul>
+        <Tip>Puedes crear múltiples seguimientos para diferentes situaciones y momentos, creando una estrategia completa de re-enganche</Tip>
+    </Step>
+</Steps>
+
+## Disparador de Detención de Seguimientos
+
+**Requerido**
+
+Establece las condiciones en que la IA debe suspender la programación de seguimientos para una conversación. Esto previene el envío de mensajes una vez que se hayan cumplido los objetivos.
+
+Con esta descripción, la IA sabrá en qué momento cancelar todos los seguimientos pendientes de una conversación.
+
+<Frame>
+  <img src="/images/mensajes/es/seguimientos/disparador.png" alt="Gestión de seguimientos" />
+</Frame>
+
+<Warning>
+Es necesario especificar cuándo interrumpir los seguimientos para prevenir el envío de mensajes una vez cumplida la meta de la conversación.
+</Warning>
+
+
+
+## Mejores prácticas para seguimientos
+
+<CardGroup cols={2}>
+
+  <Card title="Tiempos apropiados" icon="clock">
+    Configura tiempos de retraso que den espacio a los clientes para responder, pero no tanto que pierdan interés. Entre 2-6 horas suele ser óptimo.
+  </Card>
+
+  <Card title="Mensajes contextuales" icon="message-circle">
+    Deja que la IA genere mensajes para obtener respuestas más naturales y adaptadas a cada conversación específica.
+  </Card>
+
+  <Card title="Respetar límites" icon="shield">
+    Respeta las limitaciones de tiempo de cada plataforma. Usa plantillas de WhatsApp cuando necesites más flexibilidad.
+  </Card>
+
+  <Card title="Probar y optimizar" icon="target">
+    Crea diferentes seguimientos y prueba cuáles funcionan mejor para tu audiencia. Monitorea las tasas de respuesta.
+  </Card>
+</CardGroup>
+
+## Gestión de seguimientos
+
+Desde la vista principal puedes:
+
+- **Ver detalles**: Revisa la configuración completa de cada seguimiento
+- **Activar/Desactivar**: Controla qué seguimientos están activos sin eliminarlos
+- **Editar**: Modifica la configuración de seguimientos existentes
+- **Eliminar**: Borra seguimientos que ya no necesites
+- **Organizar por color**: Usa los colores de etiqueta para filtrar y organizar visualmente
+
+<Frame>
+  <img src="/images/mensajes/es/seguimientos/gestion.png" alt="Gestión de seguimientos" />
+</Frame>
+## Ejemplos de uso
+
+### Ejemplo 1: Recordatorio de compra abandonada
+
+**Configuración:**
+- **Nombre**: "Recuperar carrito - 6 horas"
+- **Color**: Naranja
+- **Retraso**: 6 horas
+- **Descripción**: "Recordar a clientes que agregaron productos al carrito pero no completaron la compra"
+- **Disparador de detención**: "Detener cuando el cliente completa la compra, elimina el carrito o solicita que no se le contacte más"
+- **Mensaje**: Personalizado con información de descuento
+- **Plantilla WhatsApp**: Sí (para envío después de 12 horas)
+
+### Ejemplo 2: Seguimiento post-venta
+
+**Configuración:**
+- **Nombre**: "Seguimiento post-venta"
+- **Color**: Verde
+- **Retraso**: 24 horas (con plantilla WhatsApp)
+- **Descripción**: "Seguimiento después de una compra para asegurar satisfacción del cliente"
+- **Disparador de detención**: "Detener cuando el cliente confirma satisfacción, reporta un problema (para escalar a soporte) o agradece el seguimiento"
+- **Mensaje**: Dejar que la IA genere
+- **Plantilla WhatsApp**: "Confirmación de compra"
+
+
+## Limitaciones y consideraciones
+
+### Límites de tiempo por plataforma
+
+| Plataforma | Tiempo máximo sin plantilla | Tiempo máximo con plantilla |
+|------------|------------------------------|-----------------------------|
+| **Instagram** | 12 horas | No aplica (sin plantillas) |
+| **Messenger** | 12 horas | No aplica (sin plantillas) |
+| **WhatsApp** | 12 horas | Sin límite (con plantilla aprobada) |
+
+<Warning>
+Las políticas de Meta limitan a 12 horas el envío de mensajes en Instagram y Messenger después de la última interacción del usuario, independientemente de si usas plantillas o no.
+</Warning>
+
+### Costos de WhatsApp
+
+Cuando uses plantillas de WhatsApp para seguimientos, ten en cuenta que:
+
+- Se generará un cargo adicional por el uso de la API de WhatsApp
+- Los precios varían según tu plan y región
+- Consulta los precios actualizados en la documentación oficial de WhatsApp Business API
+
+<Accordion title="Preguntas frecuentes">
+
+### ¿Cuántos seguimientos puedo crear?
+
+Por el momento solo se puedes tener 5 seguimientos activos por cada chatbot.
+
+### ¿Puedo editar un seguimiento después de crearlo?
+
+Sí, puedes editar cualquier configuración de un seguimiento existente. Los cambios se aplicarán a los seguimientos futuros.
+
+### ¿Qué pasa si un cliente responde antes de que se envíe el seguimiento?
+
+Si un cliente responde antes de que se cumpla el tiempo de retraso, el seguimiento se cancela automáticamente para evitar enviar mensajes innecesarios.
+
+### ¿Puedo usar el mismo seguimiento para diferentes plataformas?
+
+Sí, puedes configurar el mismo seguimiento para que funcione en todas tus integraciones activas. Sin embargo, ten en cuenta las limitaciones de tiempo de cada plataforma.
+
+### ¿Cómo sé si un seguimiento se envió correctamente?
+
+Puedes verificar en los logs de conversaciones si un seguimiento fue activado y enviado. El sistema te mostrará cuándo y a quién se envió cada seguimiento.
+
+### ¿Qué diferencia hay entre dejar que la IA genere el mensaje y escribirlo manualmente?
+
+Cuando la IA genera el mensaje, se adapta automáticamente al contexto de cada conversación específica, creando mensajes más naturales y personalizados. Un mensaje manual será el mismo para todos los clientes pero te da control total sobre el contenido.
+
+### ¿Puedo programar seguimientos para momentos específicos del día?
+
+Los seguimientos se envían basándose en el tiempo transcurrido desde la última interacción, no en horas específicas del día. Si necesitas programar envíos a horas específicas, considera usar campañas programadas.
+
+### ¿Los seguimientos funcionan con todos los tipos de conversaciones?
+
+Sí, los seguimientos funcionan con cualquier tipo de conversación activa en tus integraciones configuradas (WhatsApp, Instagram, Messenger).
+
+</Accordion>

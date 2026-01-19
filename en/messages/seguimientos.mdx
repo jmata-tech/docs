@@ -1,0 +1,331 @@
+---
+title: "Follow-ups"
+description: "Send automatic follow-up messages when your customer doesn't respond"
+icon: "clock"
+---
+
+## What are follow-up messages?
+
+Follow-up messages are automatic messages sent to your customers based on their current situation. They can serve as reminders, to re-engage a conversation with an interested customer, or to drive a pending action.
+
+Other advantages of follow-ups are:
+
+- **Recover conversations**: Re-engage customers who stopped responding
+- **Automate follow-up**: Don't lose opportunities by forgetting to do manual follow-up
+- **Improve experience**: Keep communication fluid and proactive with your customers
+- **Increase conversions**: Improve your response rates and sales closure
+
+<Tip>Follow-ups are essential to maximize the value of each conversation and not lose business opportunities</Tip>
+
+<Warning>
+Delay times have limitations depending on the platform:
+- **Instagram and Messenger**: Maximum 12 hours after the last interaction (Meta API policy)
+- **WhatsApp**: Can use more time if you use templates pre-approved by Meta
+</Warning>
+
+## Prerequisites
+
+Before creating your first follow-up, make sure you have:
+
+1. **Active integration**: At least one active messaging integration (WhatsApp, Instagram or Messenger)
+2. **Existing conversations**: Follow-ups are applied to active conversations with your customers
+3. **WhatsApp templates** (optional): If you use WhatsApp and want to send after 12 hours, you need pre-approved templates
+
+<Warning>Without an active integration, follow-ups will not be sent</Warning>
+
+## Main follow-ups view
+
+The main view allows you to manage all your follow-up messages from a single place. Here you'll find all the tools needed to manage your automations.
+
+<Frame>
+  <img src="/images/mensajes/en/seguimientos/seguimientos.png" alt="Main follow-ups view" />
+</Frame>
+
+## Create a follow-up message
+
+To create a new follow-up, click the **Create Follow-up** button located in the top right of the main page.
+
+<Frame>
+  <img src="/images/mensajes/en/seguimientos/boton.png" alt="Create follow-up button" />
+</Frame>
+
+The creation form will guide you step by step to configure your automation:
+
+<Steps>
+    <Step>
+        <h3>1. Display Name</h3>
+        <p>Enter a friendly and descriptive name that helps you easily identify this follow-up in your list.</p>
+        <Frame>
+          <img src="/images/mensajes/en/seguimientos/nombre.png" alt="Display name" />
+        </Frame>
+        <p><strong>Requirements:</strong></p>
+        <ul>
+          <li>Maximum 100 characters</li>
+          <li>Descriptive name of the follow-up's purpose</li>
+        </ul>
+        <p><strong>Examples:</strong></p>
+        <ul>
+          <li>"Inquiry follow-up - 24 hours"</li>
+          <li>"Abandoned product reminder"</li>
+        </ul>
+        <Tip>Use clear and descriptive names to quickly identify the purpose of each follow-up</Tip>
+    </Step>
+
+    <Step>
+        <h3>2. Label Color (Optional)</h3>
+        <p>Choose a color to label this follow-up and improve the visual organization of your list.</p>
+        <Frame>
+          <img src="/images/mensajes/en/seguimientos/label.png" alt="Label color" />
+        </Frame>
+        <p>Label colors allow you to:</p>
+        <ul>
+          <li>Visually organize your follow-ups</li>
+          <li>Group follow-ups by type or purpose</li>
+          <li>Quickly identify different categories</li>
+        </ul>
+    </Step>
+
+    <Step>
+        <h3>3. Delay After Last Interaction</h3>
+        <p>Configure when the follow-up will be sent after the customer stopped responding.</p>
+        <Frame>
+          <img src="/images/mensajes/en/seguimientos/delay.png" alt="Configure delay" />
+        </Frame>
+        <p><strong>Available options:</strong></p>
+        <ul>
+          <li><strong>Let AI decide</strong>: Artificial intelligence will determine the best time to send the follow-up based on the conversation context</li>
+          <li><strong>Manual configuration</strong>: Define a specific time (hours or minutes) after the last interaction</li>
+        </ul>
+        <h4>Platform limitations:</h4>
+        <ul>
+          <li><strong>Instagram and Messenger</strong>: Maximum 12 hours after the last interaction (Meta API policy)</li>
+          <li><strong>WhatsApp</strong>: You can use more time if you use templates pre-approved by Meta. Without templates, it's also limited to 12 hours</li>
+        </ul>
+        <Warning>
+          If you configure a delay greater than 12 hours for Instagram or Messenger, the system will automatically adjust the time to the maximum allowed.
+        </Warning>
+        <Tip>Letting AI decide is recommended when you're not sure of the best time, as it optimizes based on context and conversation type</Tip>
+    </Step>
+
+    <Step>
+        <h3>4. Description *</h3>
+        <p>This description is crucial: it tells the AI when and why to activate this follow-up. It should be clear and specific about the conditions.</p>
+        <Frame>
+          <img src="/images/mensajes/en/seguimientos/description.png" alt="Follow-up description" />
+        </Frame>
+        <p><strong>Examples of good descriptions:</strong></p>
+        <ul>
+          <li>Send follow-up when a customer asks about a product but doesn't respond in 6 hours</li>
+          <li>Reminder for customers who requested information about services but left the conversation without closing</li>
+          <li>Sales follow-up when the customer shows interest but doesn't complete the purchase</li>
+        </ul>
+        <p><strong>What to include in the description:</strong></p>
+        <ul>
+          <li>Conversation context (what type of inquiry or situation)</li>
+          <li>Activation condition (when it should be sent)</li>
+          <li>Message purpose (what you want to achieve)</li>
+        </ul>
+        <Warning>A clear and detailed description is essential for the AI to activate the follow-up at the right time</Warning>
+    </Step>
+
+    <Step>
+        <h3>6. Message (Optional)</h3>
+        <p>Define the content of the message that will be sent as part of this follow-up.</p>
+        <Frame>
+          <img src="/images/mensajes/en/seguimientos/message.png" alt="Follow-up message" />
+        </Frame>
+        <p><strong>Available options:</strong></p>
+        <ul>
+          <li><strong>Let AI generate</strong>: Artificial intelligence will create the message automatically based on the description and conversation context</li>
+          <li><strong>Write custom message</strong>: Define exactly what message you want to send</li>
+        </ul>
+        <h4>Advantages of each option:</h4>
+        <p><strong>AI generates the message:</strong></p>
+        <ul>
+          <li>Contextually relevant messages</li>
+          <li>Automatic adaptation to the tone and style of the conversation</li>
+          <li>Time savings in configuration</li>
+          <li>Personalization according to each customer's context</li>
+        </ul>
+        <p><strong>Custom message:</strong></p>
+        <ul>
+          <li>Total control over content</li>
+          <li>Consistency in the message for all customers</li>
+          <li>Ideal for specific messages or with corporate information</li>
+        </ul>
+        <Tip>Letting AI generate the message is recommended to get more natural messages adapted to each specific situation</Tip>
+    </Step>
+
+    <Step>
+        <h3>7. WhatsApp Template (Optional)</h3>
+        <p>If you use WhatsApp and need to send follow-ups after 12 hours, you can use a template pre-approved by Meta.</p>
+        <Frame>
+          <img src="/images/mensajes/en/seguimientos/template.png" alt="WhatsApp template" />
+        </Frame>
+        <p><strong>When to use templates:</strong></p>
+        <ul>
+          <li>When you need to send follow-ups after 12 hours on WhatsApp</li>
+          <li>For promotional or marketing messages</li>
+          <li>To maintain consistency with your approved templates</li>
+        </ul>
+        <p><strong>Important about costs:</strong></p>
+        <Warning>
+          Using WhatsApp templates generates a separate charge from WhatsApp. Check WhatsApp API prices before using this option.
+        </Warning>
+        <p>You can select a previously created and approved template from your list of available templates. Or you can also [create a template from Doko](./templates) and use it here.</p>
+        <Tip>WhatsApp templates are useful when you need to send messages outside the 12-hour window or for messages that require prior approval from Meta</Tip>
+    </Step>
+
+    <Step>
+        <h3>8. Review and create</h3>
+        <p>Review all settings before creating the follow-up. Once created, it will be active and will start working automatically.</p>
+        <Frame>
+          <img src="/images/mensajes/en/seguimientos/send.png" alt="Review follow-up" />
+        </Frame>
+        <p>Before confirming, verify:</p>
+        <ul>
+          <li>Descriptive and clear name</li>
+          <li>Appropriate delay time for your platform</li>
+          <li>Description that clearly explains when to activate</li>
+          <li>Well-defined stop trigger</li>
+          <li>Message configuration (AI or custom)</li>
+          <li>WhatsApp template if necessary</li>
+        </ul>
+        <Tip>You can create multiple follow-ups for different situations and moments, creating a complete re-engagement strategy</Tip>
+    </Step>
+</Steps>
+
+## Follow-up Stop Trigger
+
+**Required**
+
+Set the conditions in which the AI should suspend scheduling follow-ups for a conversation. This prevents sending messages once the objectives have been met.
+
+With this description, the AI will know when to cancel all pending follow-ups for a conversation.
+
+<Frame>
+  <img src="/images/mensajes/en/seguimientos/disparador.png" alt="Follow-up management" />
+</Frame>
+
+<Warning>
+It is necessary to specify when to interrupt follow-ups to prevent sending messages once the conversation goal has been met.
+</Warning>
+
+
+
+## Best practices for follow-ups
+
+<CardGroup cols={2}>
+
+  <Card title="Appropriate times" icon="clock">
+    Configure delay times that give customers space to respond, but not so much that they lose interest. Between 2-6 hours is usually optimal.
+  </Card>
+
+  <Card title="Contextual messages" icon="message-circle">
+    Let AI generate messages to get more natural responses adapted to each specific conversation.
+  </Card>
+
+  <Card title="Respect limits" icon="shield">
+    Respect the time limitations of each platform. Use WhatsApp templates when you need more flexibility.
+  </Card>
+
+  <Card title="Test and optimize" icon="target">
+    Create different follow-ups and test which ones work best for your audience. Monitor response rates.
+  </Card>
+</CardGroup>
+
+## Follow-up management
+
+From the main view you can:
+
+- **View details**: Review the complete configuration of each follow-up
+- **Activate/Deactivate**: Control which follow-ups are active without deleting them
+- **Edit**: Modify the configuration of existing follow-ups
+- **Delete**: Delete follow-ups you no longer need
+- **Organize by color**: Use label colors to filter and organize visually
+
+<Frame>
+  <img src="/images/mensajes/en/seguimientos/gestion.png" alt="Follow-up management" />
+</Frame>
+## Usage examples
+
+### Example 1: Abandoned cart reminder
+
+**Configuration:**
+- **Name**: Recover cart - 6 hours
+- **Color**: Orange
+- **Delay**: 6 hours
+- **Description**: Remind customers who added products to cart but didn't complete the purchase
+- **Stop trigger**: Stop when the customer completes the purchase, deletes the cart, or requests not to be contacted anymore
+- **Message**: Custom with discount information
+- **WhatsApp template**: Yes (for sending after 12 hours)
+
+### Example 2: Post-sale follow-up
+
+**Configuration:**
+- **Name**: Post-sale follow-up
+- **Color**: Green
+- **Delay**: 24 hours (with WhatsApp template)
+- **Description**: Follow-up after a purchase to ensure customer satisfaction
+- **Stop trigger**: Stop when the customer confirms satisfaction, reports a problem (to escalate to support), or thanks for the follow-up
+- **Message**: Let AI generate
+- **WhatsApp template**: Purchase confirmation
+
+
+## Limitations and considerations
+
+### Time limits by platform
+
+| Platform | Maximum time without template | Maximum time with template |
+|----------|-------------------------------|----------------------------|
+| **Instagram** | 12 hours | Not applicable (no templates) |
+| **Messenger** | 12 hours | Not applicable (no templates) |
+| **WhatsApp** | 12 hours | No limit (with approved template) |
+
+<Warning>
+Meta policies limit sending messages on Instagram and Messenger to 12 hours after the user's last interaction, regardless of whether you use templates or not.
+</Warning>
+
+### WhatsApp costs
+
+When using WhatsApp templates for follow-ups, keep in mind that:
+
+- An additional charge will be generated for using the WhatsApp API
+- Prices vary according to your plan and region
+- Check updated prices in the official WhatsApp Business API documentation
+
+<Accordion title="Frequently asked questions">
+
+### How many follow-ups can I create?
+
+Currently you can only have 5 active follow-ups per chatbot.
+
+### Can I edit a follow-up after creating it?
+
+Yes, you can edit any configuration of an existing follow-up. Changes will apply to future follow-ups.
+
+### What happens if a customer responds before the follow-up is sent?
+
+If a customer responds before the delay time is met, the follow-up is automatically canceled to avoid sending unnecessary messages.
+
+### Can I use the same follow-up for different platforms?
+
+Yes, you can configure the same follow-up to work on all your active integrations. However, keep in mind the time limitations of each platform.
+
+### How do I know if a follow-up was sent correctly?
+
+You can check in conversation logs if a follow-up was activated and sent. The system will show you when and to whom each follow-up was sent.
+
+### What's the difference between letting AI generate the message and writing it manually?
+
+When AI generates the message, it automatically adapts to the context of each specific conversation, creating more natural and personalized messages. A manual message will be the same for all customers but gives you total control over the content.
+
+### Can I schedule follow-ups for specific times of the day?
+
+Follow-ups are sent based on time elapsed since the last interaction, not on specific hours of the day. If you need to schedule sends at specific times, consider using scheduled campaigns.
+
+### Do follow-ups work with all types of conversations?
+
+Yes, follow-ups work with any type of active conversation in your configured integrations (WhatsApp, Instagram, Messenger).
+
+</Accordion>
