@@ -1,6 +1,6 @@
 ---
 title: 'Seguimientos'
-description: 'Envía mensajes automáticos de seguimiento cuando tus clientes no responden'
+description: 'Envía mensajes automáticos de seguimiento'
 icon: 'clock'
 ---
 
@@ -19,7 +19,7 @@ Otras ventajas de los seguimientos son:
 
 <Warning>
 Los tiempos de retraso tienen limitaciones según la plataforma:
-- **Instagram y Messenger**: Máximo 12 horas después de la última interacción (política de API de Meta)
+- **Instagram y Messenger**: Máximo 24 horas después de la última interacción (política de API de Meta)
 - **WhatsApp**: Puede usar más tiempo si usas plantillas preaprobadas por Meta
 </Warning>
 
@@ -29,7 +29,7 @@ Antes de crear tu primer seguimiento, asegúrate de tener:
 
 1. **Integración activa**: Al menos una integración de mensajería activa (WhatsApp, Instagram o Messenger)
 2. **Conversaciones existentes**: Los seguimientos se aplican a conversaciones activas con tus clientes
-3. **Plantillas de WhatsApp** (opcional): Si usas WhatsApp y quieres enviar después de 12 horas, necesitas plantillas preaprobadas
+3. **Plantillas de WhatsApp** (opcional): Si usas WhatsApp y quieres enviar después de 24 horas, necesitas plantillas preaprobadas
 
 <Warning>Sin una integración activa, los seguimientos no se enviarán</Warning>
 
@@ -98,13 +98,13 @@ El formulario de creación te guiará paso a paso para configurar tu automatizac
         </ul>
         <h4>Limitaciones por plataforma:</h4>
         <ul>
-          <li><strong>Instagram y Messenger</strong>: Máximo 12 horas después de la última interacción (política de API de Meta)</li>
-          <li><strong>WhatsApp</strong>: Puedes usar más tiempo si usas plantillas preaprobadas por Meta. Sin plantillas, también está limitado a 12 horas</li>
+          <li><strong>Instagram y Messenger</strong>: Máximo 24 horas después de la última interacción (política de API de Meta)</li>
+          <li><strong>WhatsApp</strong>: Puedes usar más tiempo si usas plantillas preaprobadas por Meta. Sin plantillas, también está limitado a 24 horas</li>
         </ul>
         <Warning>
-          Si configuras un retraso mayor a 12 horas para Instagram o Messenger, el sistema automáticamente ajustará el tiempo al máximo permitido.
+          Si configuras un retraso mayor a 24 horas para Instagram o Messenger, el sistema automáticamente ajustará el tiempo al máximo permitido.
         </Warning>
-        <Tip>Dejar que la IA decida es recomendable cuando no estés seguro del mejor momento, ya que optimiza según el contexto y tipo de conversación</Tip>
+        <Tip>Dejar que la IA decida es recomendable cuando no estés seguro del mejor momento, ya que optimiza según el contexto y tipo de conversación. Solamente funcionará con la integración de Whatsapp.</Tip>
     </Step>
 
     <Step>
@@ -130,7 +130,7 @@ El formulario de creación te guiará paso a paso para configurar tu automatizac
 
     <Step>
         <h3>6. Mensaje (Opcional)</h3>
-        <p>Define el contenido del mensaje que se enviará como parte de este seguimiento.</p>
+        <p>Define el contenido del mensaje que se enviará como parte de este seguimiento. El mensaje solamente aplica dentro de una ventana de 24 horas.</p>
         <Frame>
           <img src="/images/mensajes/es/seguimientos/message.png" alt="Mensaje del seguimiento" />
         </Frame>
@@ -158,22 +158,22 @@ El formulario de creación te guiará paso a paso para configurar tu automatizac
 
     <Step>
         <h3>7. Plantilla de WhatsApp (Opcional)</h3>
-        <p>Si usas WhatsApp y necesitas enviar seguimientos después de 12 horas, puedes usar una plantilla preaprobada por Meta.</p>
+        <p>Si usas WhatsApp y necesitas enviar seguimientos después de 24 horas, puedes usar una plantilla preaprobada por Meta. Tener una plantilla es completamente **necesario** si el seguimiento es después de 24 horas.</p>
         <Frame>
           <img src="/images/mensajes/es/seguimientos/template.png" alt="Plantilla de WhatsApp" />
         </Frame>
         <p><strong>Cuándo usar plantillas:</strong></p>
         <ul>
-          <li>Cuando necesitas enviar seguimientos después de 12 horas en WhatsApp</li>
+          <li>Cuando necesitas enviar seguimientos después de 24 horas en WhatsApp</li>
           <li>Para mensajes promocionales o de marketing</li>
           <li>Para mantener consistencia con tus plantillas aprobadas</li>
         </ul>
         <p><strong>Importante sobre costos:</strong></p>
         <Warning>
-          El uso de plantillas de WhatsApp genera un cargo separado de WhatsApp. Verifica los precios de la API de WhatsApp antes de usar esta opción.
+          El uso de plantillas de WhatsApp genera un cargo separado de WhatsApp. Verifica los precios de la API de WhatsApp antes de usar esta opción. Para saber mas haz [click aqui](https://business.whatsapp.com/products/platform-pricing?lang=es_LA)
         </Warning>
         <p>Puedes seleccionar una plantilla previamente creada y aprobada desde tu lista de plantillas disponibles. O también puedes [crear una plantilla desde Doko](./plantillas) y utilizarla aquí.</p>
-        <Tip>Las plantillas de WhatsApp son útiles cuando necesitas enviar mensajes fuera de la ventana de 12 horas o para mensajes que requieren aprobación previa de Meta</Tip>
+        <Tip>Las plantillas de WhatsApp son útiles cuando necesitas enviar mensajes fuera de la ventana de 24 horas o para mensajes que requieren aprobación previa de Meta </Tip>
     </Step>
 
     <Step>
@@ -249,16 +249,16 @@ Desde la vista principal puedes:
 </Frame>
 ## Ejemplos de uso
 
-### Ejemplo 1: Recordatorio de compra abandonada
+### Ejemplo 1: Recordatorio de agendamiento de cita
 
 **Configuración:**
-- **Nombre**: "Recuperar carrito - 6 horas"
-- **Color**: Naranja
-- **Retraso**: 6 horas
-- **Descripción**: "Recordar a clientes que agregaron productos al carrito pero no completaron la compra"
-- **Disparador de detención**: "Detener cuando el cliente completa la compra, elimina el carrito o solicita que no se le contacte más"
-- **Mensaje**: Personalizado con información de descuento
-- **Plantilla WhatsApp**: Sí (para envío después de 12 horas)
+- **Nombre**: "Recordatorio de cita pendiente - 4 horas"
+- **Color**: Azul
+- **Retraso**: 4 horas
+- **Descripción**: "Enviar seguimiento cuando un cliente muestra interés en agendar una cita pero no confirma la fecha y hora"
+- **Disparador de detención**: "Detener cuando el cliente confirma la cita, cancela la solicitud o indica que ya no está interesado"
+- **Mensaje**: Personalizado con recordatorio de disponibilidad y opciones de horarios
+- **Plantilla WhatsApp**: Sí (para envío después de 24 horas)
 
 ### Ejemplo 2: Seguimiento post-venta
 
@@ -278,12 +278,12 @@ Desde la vista principal puedes:
 
 | Plataforma | Tiempo máximo sin plantilla | Tiempo máximo con plantilla |
 |------------|------------------------------|-----------------------------|
-| **Instagram** | 12 horas | No aplica (sin plantillas) |
-| **Messenger** | 12 horas | No aplica (sin plantillas) |
-| **WhatsApp** | 12 horas | Sin límite (con plantilla aprobada) |
+| **Instagram** | 24 horas | No aplica (sin plantillas) |
+| **Messenger** | 24 horas | No aplica (sin plantillas) |
+| **WhatsApp** | 24 horas | Sin límite (con plantilla aprobada) |
 
 <Warning>
-Las políticas de Meta limitan a 12 horas el envío de mensajes en Instagram y Messenger después de la última interacción del usuario, independientemente de si usas plantillas o no.
+Las políticas de Meta limitan a 24 horas el envío de mensajes en Instagram y Messenger después de la última interacción del usuario, independientemente de si usas plantillas o no.
 </Warning>
 
 ### Costos de WhatsApp

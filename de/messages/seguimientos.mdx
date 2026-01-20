@@ -19,7 +19,7 @@ Weitere Vorteile von Nachfassaktionen sind:
 
 <Warning>
 Verzögerungszeiten haben Einschränkungen je nach Plattform:
-- **Instagram und Messenger**: Maximum 12 Stunden nach der letzten Interaktion (Meta-API-Richtlinie)
+- **Instagram und Messenger**: Maximum 24 Stunden nach der letzten Interaktion (Meta-API-Richtlinie)
 - **WhatsApp**: Kann mehr Zeit verwenden, wenn du von Meta vorab genehmigte Vorlagen verwendest
 </Warning>
 
@@ -29,7 +29,7 @@ Bevor du deine erste Nachfassaktion erstellst, stelle sicher, dass du hast:
 
 1. **Aktive Integration**: Mindestens eine aktive Messaging-Integration (WhatsApp, Instagram oder Messenger)
 2. **Bestehende Unterhaltungen**: Nachfassaktionen werden auf aktive Unterhaltungen mit deinen Kunden angewendet
-3. **WhatsApp-Vorlagen** (optional): Wenn du WhatsApp verwendest und nach 12 Stunden senden möchtest, benötigst du vorab genehmigte Vorlagen
+3. **WhatsApp-Vorlagen** (optional): Wenn du WhatsApp verwendest und nach 24 Stunden senden möchtest, benötigst du vorab genehmigte Vorlagen
 
 <Warning>Ohne eine aktive Integration werden Nachfassaktionen nicht gesendet</Warning>
 
@@ -98,11 +98,11 @@ Das Erstellungsformular führt dich Schritt für Schritt durch die Konfiguration
         </ul>
         <h4>Plattform-Einschränkungen:</h4>
         <ul>
-          <li><strong>Instagram und Messenger</strong>: Maximum 12 Stunden nach der letzten Interaktion (Meta-API-Richtlinie)</li>
-          <li><strong>WhatsApp</strong>: Du kannst mehr Zeit verwenden, wenn du von Meta vorab genehmigte Vorlagen verwendest. Ohne Vorlagen ist es auch auf 12 Stunden begrenzt</li>
+          <li><strong>Instagram und Messenger</strong>: Maximum 24 Stunden nach der letzten Interaktion (Meta-API-Richtlinie)</li>
+          <li><strong>WhatsApp</strong>: Du kannst mehr Zeit verwenden, wenn du von Meta vorab genehmigte Vorlagen verwendest. Ohne Vorlagen ist es auch auf 24 Stunden begrenzt</li>
         </ul>
         <Warning>
-          Wenn du eine Verzögerung von mehr als 12 Stunden für Instagram oder Messenger konfigurierst, passt das System die Zeit automatisch auf das Maximum an.
+          Wenn du eine Verzögerung von mehr als 24 Stunden für Instagram oder Messenger konfigurierst, passt das System die Zeit automatisch auf das Maximum an.
         </Warning>
         <Tip>Die KI entscheiden zu lassen ist empfehlenswert, wenn du dir nicht sicher bist über den besten Zeitpunkt, da sie basierend auf Kontext und Unterhaltungstyp optimiert</Tip>
     </Step>
@@ -130,7 +130,7 @@ Das Erstellungsformular führt dich Schritt für Schritt durch die Konfiguration
 
     <Step>
         <h3>6. Nachricht (Optional)</h3>
-        <p>Definiere den Inhalt der Nachricht, die als Teil dieser Nachfassaktion gesendet wird.</p>
+        <p>Definiere den Inhalt der Nachricht, die als Teil dieser Nachfassaktion gesendet wird. Die Nachricht gilt nur innerhalb eines 24-Stunden-Fensters.</p>
         <Frame>
           <img src="/images/mensajes/de/seguimientos/message.png" alt="Nachfassnachricht" />
         </Frame>
@@ -158,13 +158,13 @@ Das Erstellungsformular führt dich Schritt für Schritt durch die Konfiguration
 
     <Step>
         <h3>7. WhatsApp-Vorlage (Optional)</h3>
-        <p>Wenn du WhatsApp verwendest und nach 12 Stunden Nachfassaktionen senden musst, kannst du eine von Meta vorab genehmigte Vorlage verwenden.</p>
+        <p>Wenn du WhatsApp verwendest und nach 24 Stunden Nachfassaktionen senden musst, kannst du eine von Meta vorab genehmigte Vorlage verwenden. Eine Vorlage zu haben ist vollständig **erforderlich**, wenn die Nachfassaktion nach 24 Stunden ist.</p>
         <Frame>
           <img src="/images/mensajes/de/seguimientos/template.png" alt="WhatsApp-Vorlage" />
         </Frame>
         <p><strong>Wann Vorlagen verwendet werden sollten:</strong></p>
         <ul>
-          <li>Wenn du nach 12 Stunden Nachfassaktionen auf WhatsApp senden musst</li>
+          <li>Wenn du nach 24 Stunden Nachfassaktionen auf WhatsApp senden musst</li>
           <li>Für Werbe- oder Marketingnachrichten</li>
           <li>Um Konsistenz mit deinen genehmigten Vorlagen zu wahren</li>
         </ul>
@@ -173,7 +173,7 @@ Das Erstellungsformular führt dich Schritt für Schritt durch die Konfiguration
           Die Verwendung von WhatsApp-Vorlagen generiert eine separate Gebühr von WhatsApp. Überprüfe die WhatsApp-API-Preise, bevor du diese Option verwendest.
         </Warning>
         <p>Du kannst eine zuvor erstellte und genehmigte Vorlage aus deiner Liste verfügbarer Vorlagen auswählen. Oder du kannst auch [eine Vorlage von Doko erstellen](./templates) und hier verwenden.</p>
-        <Tip>WhatsApp-Vorlagen sind nützlich, wenn du Nachrichten außerhalb des 12-Stunden-Fensters senden musst oder für Nachrichten, die eine vorherige Genehmigung von Meta erfordern</Tip>
+        <Tip>WhatsApp-Vorlagen sind nützlich, wenn du Nachrichten außerhalb des 24-Stunden-Fensters senden musst oder für Nachrichten, die eine vorherige Genehmigung von Meta erfordern</Tip>
     </Step>
 
     <Step>
@@ -249,16 +249,16 @@ Von der Hauptansicht aus kannst du:
 </Frame>
 ## Verwendungsbeispiele
 
-### Beispiel 1: Erinnerung an verlassenen Warenkorb
+### Beispiel 1: Erinnerung an Terminvereinbarung
 
 **Konfiguration:**
-- **Name**: "Warenkorb wiederherstellen - 6 Stunden"
-- **Farbe**: Orange
-- **Verzögerung**: 6 Stunden
-- **Beschreibung**: "Erinnere Kunden, die Produkte zum Warenkorb hinzugefügt haben, aber den Kauf nicht abgeschlossen haben"
-- **Stopp-Trigger**: "Stoppen, wenn der Kunde den Kauf abschließt, den Warenkorb löscht oder darum bittet, nicht mehr kontaktiert zu werden"
-- **Nachricht**: Benutzerdefiniert mit Rabattinformationen
-- **WhatsApp-Vorlage**: Ja (für Versand nach 12 Stunden)
+- **Name**: "Erinnerung an ausstehenden Termin - 4 Stunden"
+- **Farbe**: Blau
+- **Verzögerung**: 4 Stunden
+- **Beschreibung**: "Nachfassaktion senden, wenn ein Kunde Interesse an der Vereinbarung eines Termins zeigt, aber Datum und Uhrzeit nicht bestätigt"
+- **Stopp-Trigger**: "Stoppen, wenn der Kunde den Termin bestätigt, die Anfrage storniert oder anzeigt, dass er nicht mehr interessiert ist"
+- **Nachricht**: Benutzerdefiniert mit Verfügbarkeitserinnerung und Zeitslot-Optionen
+- **WhatsApp-Vorlage**: Ja (für Versand nach 24 Stunden)
 
 ### Beispiel 2: Nachfassaktion nach dem Verkauf
 
@@ -278,12 +278,12 @@ Von der Hauptansicht aus kannst du:
 
 | Plattform | Maximale Zeit ohne Vorlage | Maximale Zeit mit Vorlage |
 |-----------|----------------------------|---------------------------|
-| **Instagram** | 12 Stunden | Nicht anwendbar (keine Vorlagen) |
-| **Messenger** | 12 Stunden | Nicht anwendbar (keine Vorlagen) |
-| **WhatsApp** | 12 Stunden | Kein Limit (mit genehmigter Vorlage) |
+| **Instagram** | 24 Stunden | Nicht anwendbar (keine Vorlagen) |
+| **Messenger** | 24 Stunden | Nicht anwendbar (keine Vorlagen) |
+| **WhatsApp** | 24 Stunden | Kein Limit (mit genehmigter Vorlage) |
 
 <Warning>
-Die Meta-Richtlinien begrenzen das Senden von Nachrichten auf Instagram und Messenger auf 12 Stunden nach der letzten Interaktion des Benutzers, unabhängig davon, ob du Vorlagen verwendest oder nicht.
+Die Meta-Richtlinien begrenzen das Senden von Nachrichten auf Instagram und Messenger auf 24 Stunden nach der letzten Interaktion des Benutzers, unabhängig davon, ob du Vorlagen verwendest oder nicht.
 </Warning>
 
 ### WhatsApp-Kosten

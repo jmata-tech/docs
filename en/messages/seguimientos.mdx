@@ -19,7 +19,7 @@ Other advantages of follow-ups are:
 
 <Warning>
 Delay times have limitations depending on the platform:
-- **Instagram and Messenger**: Maximum 12 hours after the last interaction (Meta API policy)
+- **Instagram and Messenger**: Maximum 24 hours after the last interaction (Meta API policy)
 - **WhatsApp**: Can use more time if you use templates pre-approved by Meta
 </Warning>
 
@@ -29,7 +29,7 @@ Before creating your first follow-up, make sure you have:
 
 1. **Active integration**: At least one active messaging integration (WhatsApp, Instagram or Messenger)
 2. **Existing conversations**: Follow-ups are applied to active conversations with your customers
-3. **WhatsApp templates** (optional): If you use WhatsApp and want to send after 12 hours, you need pre-approved templates
+3. **WhatsApp templates** (optional): If you use WhatsApp and want to send after 24 hours, you need pre-approved templates
 
 <Warning>Without an active integration, follow-ups will not be sent</Warning>
 
@@ -98,11 +98,11 @@ The creation form will guide you step by step to configure your automation:
         </ul>
         <h4>Platform limitations:</h4>
         <ul>
-          <li><strong>Instagram and Messenger</strong>: Maximum 12 hours after the last interaction (Meta API policy)</li>
-          <li><strong>WhatsApp</strong>: You can use more time if you use templates pre-approved by Meta. Without templates, it's also limited to 12 hours</li>
+          <li><strong>Instagram and Messenger</strong>: Maximum 24 hours after the last interaction (Meta API policy)</li>
+          <li><strong>WhatsApp</strong>: You can use more time if you use templates pre-approved by Meta. Without templates, it's also limited to 24 hours</li>
         </ul>
         <Warning>
-          If you configure a delay greater than 12 hours for Instagram or Messenger, the system will automatically adjust the time to the maximum allowed.
+          If you configure a delay greater than 24 hours for Instagram or Messenger, the system will automatically adjust the time to the maximum allowed.
         </Warning>
         <Tip>Letting AI decide is recommended when you're not sure of the best time, as it optimizes based on context and conversation type</Tip>
     </Step>
@@ -130,7 +130,7 @@ The creation form will guide you step by step to configure your automation:
 
     <Step>
         <h3>6. Message (Optional)</h3>
-        <p>Define the content of the message that will be sent as part of this follow-up.</p>
+        <p>Define the content of the message that will be sent as part of this follow-up. The message only applies within a 24-hour window.</p>
         <Frame>
           <img src="/images/mensajes/en/seguimientos/message.png" alt="Follow-up message" />
         </Frame>
@@ -158,13 +158,13 @@ The creation form will guide you step by step to configure your automation:
 
     <Step>
         <h3>7. WhatsApp Template (Optional)</h3>
-        <p>If you use WhatsApp and need to send follow-ups after 12 hours, you can use a template pre-approved by Meta.</p>
+        <p>If you use WhatsApp and need to send follow-ups after 24 hours, you can use a template pre-approved by Meta. Having a template is completely **necessary** if the follow-up is after 24 hours.</p>
         <Frame>
           <img src="/images/mensajes/en/seguimientos/template.png" alt="WhatsApp template" />
         </Frame>
         <p><strong>When to use templates:</strong></p>
         <ul>
-          <li>When you need to send follow-ups after 12 hours on WhatsApp</li>
+          <li>When you need to send follow-ups after 24 hours on WhatsApp</li>
           <li>For promotional or marketing messages</li>
           <li>To maintain consistency with your approved templates</li>
         </ul>
@@ -173,7 +173,7 @@ The creation form will guide you step by step to configure your automation:
           Using WhatsApp templates generates a separate charge from WhatsApp. Check WhatsApp API prices before using this option.
         </Warning>
         <p>You can select a previously created and approved template from your list of available templates. Or you can also [create a template from Doko](./templates) and use it here.</p>
-        <Tip>WhatsApp templates are useful when you need to send messages outside the 12-hour window or for messages that require prior approval from Meta</Tip>
+        <Tip>WhatsApp templates are useful when you need to send messages outside the 24-hour window or for messages that require prior approval from Meta</Tip>
     </Step>
 
     <Step>
@@ -249,16 +249,16 @@ From the main view you can:
 </Frame>
 ## Usage examples
 
-### Example 1: Abandoned cart reminder
+### Example 1: Appointment scheduling reminder
 
 **Configuration:**
-- **Name**: Recover cart - 6 hours
-- **Color**: Orange
-- **Delay**: 6 hours
-- **Description**: Remind customers who added products to cart but didn't complete the purchase
-- **Stop trigger**: Stop when the customer completes the purchase, deletes the cart, or requests not to be contacted anymore
-- **Message**: Custom with discount information
-- **WhatsApp template**: Yes (for sending after 12 hours)
+- **Name**: Pending appointment reminder - 4 hours
+- **Color**: Blue
+- **Delay**: 4 hours
+- **Description**: Send follow-up when a customer shows interest in scheduling an appointment but doesn't confirm the date and time
+- **Stop trigger**: Stop when the customer confirms the appointment, cancels the request, or indicates they're no longer interested
+- **Message**: Custom with availability reminder and time slot options
+- **WhatsApp template**: Yes (for sending after 24 hours)
 
 ### Example 2: Post-sale follow-up
 
@@ -278,12 +278,12 @@ From the main view you can:
 
 | Platform | Maximum time without template | Maximum time with template |
 |----------|-------------------------------|----------------------------|
-| **Instagram** | 12 hours | Not applicable (no templates) |
-| **Messenger** | 12 hours | Not applicable (no templates) |
-| **WhatsApp** | 12 hours | No limit (with approved template) |
+| **Instagram** | 24 hours | Not applicable (no templates) |
+| **Messenger** | 24 hours | Not applicable (no templates) |
+| **WhatsApp** | 24 hours | No limit (with approved template) |
 
 <Warning>
-Meta policies limit sending messages on Instagram and Messenger to 12 hours after the user's last interaction, regardless of whether you use templates or not.
+Meta policies limit sending messages on Instagram and Messenger to 24 hours after the user's last interaction, regardless of whether you use templates or not.
 </Warning>
 
 ### WhatsApp costs
